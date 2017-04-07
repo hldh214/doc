@@ -84,19 +84,27 @@ $.getJSON(AVGLE_CATEGORIES_API_URL, function (response) {
         "categories":[
             {
                 "CHID":"1",
-                "name":"Happy videos",
-                "slug":"happy-videos",
-                "total_videos":349,
-                "category_url":"https://avgle.com/videos/happy-videos",
-                "cover_url":"https://static.avgle.com/media/categories/video/1.jpg"
+                "name":"Pornstar・AV女優",
+                "slug":"pornstar",
+                "total_videos":350,
+                "category_url":"https://avgle.com/videos/pornstar",
+                "cover_url":"https://avgle.com/media/categories/video/1.jpg"
             },
             {
                 "CHID":"2",
-                "name": "Good videos",
-                "slug":"good-videos",
+                "name": "JAV・日本AV",
+                "slug":"jav",
                 "total_videos":2500,
-                "category_url":"https://avgle.com/videos/good-videos",
-                "cover_url":"https://static.avgle.com/media/categories/video/2.jpg"
+                "category_url":"https://avgle.com/videos/jav",
+                "cover_url":"https://avgle.com/media/categories/video/2.jpg"
+            },
+            {
+                "CHID":"3",
+                "name": "Uncensored・無修正",
+                "slug":"uncensored",
+                "total_videos":1000,
+                "category_url":"https://avgle.com/videos/uncensored",
+                "cover_url":"https://avgle.com/media/categories/video/3.jpg"
             }
         ]
     }
@@ -188,17 +196,19 @@ $.getJSON(AVGLE_LIST_COLLECTIONS_API_URL + page + limit, function (response) {
         "collections":[  
             {  
                 "id":"1",
-                "title":"A set of happy videos",
-                "keyword":"happy",
-                "cover_url":"https://static.avgle.com/happy.jpg",
-                "total_views":191504,
+                "title":"三上悠亜",
+                "keyword":"三上悠亜",
+                "collection_url":"https://avgle.com/c/三上悠亜",
+                "cover_url":"https://avgle.com/media/videos/tmb/19944/1.jpg",
+                "total_views":200000,
                 "video_count":17
             },
             {  
                 "id":"2",
-                "title":"A set of cool videos",
-                "keyword":"cool",
-                "cover_url":"https://static.avgle.com/cool.jpg",
+                "title":"高橋しょう子",
+                "keyword":"高橋しょう子",
+                "collection_url":"https://avgle.com/c/高橋しょう子",
+                "cover_url":"https://avgle.com/media/videos/tmb/3520/1.jpg",
                 "total_views":115927,
                 "video_count":11
             }
