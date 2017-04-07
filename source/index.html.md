@@ -319,7 +319,7 @@ $.getJSON(AVGLE_LIST_VIDEOS_API_URL + page + limit, function (response) {
                 "dislikes":0,
                 "video_url":"https://avgle.com/video/38329/happy-video",
                 "embedded_url":"https://avgle.com/embed/754cc72672b40296c76e",
-                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/38329/1.jpg",
+                "preview_url":"https://static.avgle.com/media/videos/tmb/38329/1.jpg",
                 "vid":"38329",
                 "uid":"1"
             },
@@ -336,7 +336,7 @@ $.getJSON(AVGLE_LIST_VIDEOS_API_URL + page + limit, function (response) {
                 "dislikes":0,
                 "video_url":"https://avgle.com/video/38328/cool-video",
                 "embedded_url":"https://avgle.com/embed/07ce8a9652a76f02df10",
-                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/38328/1.jpg",
+                "preview_url":"https://static.avgle.com/media/videos/tmb/38328/1.jpg",
                 "vid":"38328",
                 "uid":"1"
             }
@@ -466,7 +466,7 @@ $.getJSON(AVGLE_SEARCH_VIDEOS_API_URL + encodeURIComponent(query) + '/' + page +
                 "dislikes":0,
                 "video_url":"https://avgle.com/video/38329/happy-video",
                 "embedded_url":"https://avgle.com/embed/754cc72675b40296c76e",
-                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/38329/1.jpg",
+                "preview_url":"https://static.avgle.com/media/videos/tmb/38329/1.jpg",
                 "vid":"38329",
                 "uid":"1"
             },
@@ -483,7 +483,7 @@ $.getJSON(AVGLE_SEARCH_VIDEOS_API_URL + encodeURIComponent(query) + '/' + page +
                 "dislikes":0,
                 "video_url":"https://avgle.com/video/38327/awesome-video",
                 "embedded_url":"https://avgle.com/embed/07ce8a4652a76f02df10",
-                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/38327/1.jpg",
+                "preview_url":"https://static.avgle.com/media/videos/tmb/38327/1.jpg",
                 "vid":"38327",
                 "uid":"1"
             }
@@ -585,7 +585,7 @@ $.getJSON(AVGLE_GET_VIDEO_API_URL + vid, function (response) {
             "dislikes":0,
             "video_url":"https://avgle.com/video/38329/happy-video",
             "embedded_url":"https://avgle.com/embed/754cc72675b40296c76e",
-            "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/38329/1.jpg",
+            "preview_url":"https://static.avgle.com/media/videos/tmb/38329/1.jpg",
             "vid":"38329",
             "uid":"1"
         }
