@@ -4,106 +4,215 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Reference</title>
+    <title>Avgle API v1 Reference</title>
 
-    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
-    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
     <style>
       .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
-.highlight, .highlight .w {
-  color: #f8f8f2;
-  background-color: #272822;
-}
-.highlight .err {
-  color: #151515;
-  background-color: #ac4142;
-}
-.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
-  color: #505050;
-}
-.highlight .cp {
-  color: #f4bf75;
-}
-.highlight .nt {
-  color: #f4bf75;
-}
-.highlight .o, .highlight .ow {
-  color: #d0d0d0;
-}
-.highlight .p, .highlight .pi {
-  color: #d0d0d0;
-}
-.highlight .gi {
-  color: #90a959;
-}
-.highlight .gd {
-  color: #ac4142;
-}
 .highlight .gh {
-  color: #6a9fb5;
-  background-color: #151515;
-  font-weight: bold;
-}
-.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
-  color: #aa759f;
-}
-.highlight .kc {
-  color: #d28445;
-}
-.highlight .kt {
-  color: #d28445;
-}
-.highlight .kd {
-  color: #d28445;
-}
-.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
-  color: #90a959;
+  color: #999999;
 }
 .highlight .sr {
-  color: #75b5aa;
+  color: #f6aa11;
 }
-.highlight .si {
-  color: #8f5536;
+.highlight .go {
+  color: #888888;
 }
-.highlight .se {
-  color: #8f5536;
+.highlight .gp {
+  color: #555555;
 }
-.highlight .nn {
-  color: #f4bf75;
+.highlight .gs {
 }
-.highlight .nc {
-  color: #f4bf75;
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
 }
 .highlight .no {
-  color: #f4bf75;
+  color: #66d9ef;
 }
-.highlight .na {
-  color: #6a9fb5;
+.highlight .kt {
+  color: #66d9ef;
 }
-.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
-  color: #90a959;
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
 }
 .highlight .ss {
-  color: #90a959;
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
 }
     </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
       <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;]">
+  <body class="index" data-languages="[&quot;php&quot;,&quot;python&quot;,&quot;javascript&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
-        <img src="images/navbar.png" />
+        <img src="images/navbar.png" alt="Navbar" />
       </span>
     </a>
     <div class="tocify-wrapper">
-      <img src="images/logo.png" />
+      <img src="images/logo.png" alt="Logo" />
         <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
+              <a href="#" data-language-name="php">php</a>
               <a href="#" data-language-name="python">python</a>
+              <a href="#" data-language-name="javascript">javascript</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -112,7 +221,6 @@
       <div id="toc">
       </div>
         <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
             <li><a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
         </ul>
     </div>
@@ -121,87 +229,193 @@
       <div class="content">
         <h1 id="introduction">Introduction</h1>
 
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>Welcome to the Avgle API! You can use our API to access information like videos and categories in our database.</p>
 
-<p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
-
-<p>This example API documentation page was created with <a href="https://github.com/tripit/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&rsquo;s documentation.</p>
+<p>We have language bindings in Javascript, PHP, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
 
 <h1 id="authentication">Authentication</h1>
 
-<blockquote>
-<p>To authorize, use this code:</p>
-</blockquote>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<p>Avgle API v1 is public and free to use. Neither authentication nor API keys is needed.</p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<h1 id="video-categories">Video categories</h1>
+
+<h2 id="get-all-video-categories">Get all video categories</h2>
+<pre class="highlight php tab-php"><code>$AVGLE_CATEGORIES_API_URL = 'https://api.avgle.com/v1/categories';
+$response = json_decode(file_get_contents($url), true);
+var_dump($response);
+if ($response['success']) {
+    $categories = $response['response']['categories'];
+    doSomethingWith($categories);
+}
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">urllib.request</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="n">AVGLE_CATEGORIES_API_URL</span> <span class="o">=</span> <span class="s">'https://api.avgle.com/v1/categories'</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="nb">open</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">response</span><span class="p">[</span><span class="s">'success'</span><span class="p">]:</span>
+    <span class="n">categories</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="s">'response'</span><span class="p">][</span><span class="s">'categories'</span><span class="p">]</span>
+    <span class="n">do_something_with</span><span class="p">(</span><span class="n">categories</span><span class="p">)</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// node.js</span>
+<span class="kr">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'request'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">AVGLE_CATEGORIES_API_URL</span> <span class="o">=</span> <span class="s1">'https://api.avgle.com/v1/categories'</span><span class="p">;</span>
+<span class="nx">request</span><span class="p">(</span><span class="nx">AVGLE_CATEGORIES_API_URL</span><span class="p">,</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">response</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">body</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">categories</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">response</span><span class="p">.</span><span class="nx">categories</span><span class="p">;</span>
+        <span class="nx">doSomethingWith</span><span class="p">(</span><span class="nx">categories</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="c1">// jQuery</span>
+<span class="kd">var</span> <span class="nx">AVGLE_CATEGORIES_API_URL</span> <span class="o">=</span> <span class="s1">'https://api.avgle.com/v1/categories'</span><span class="p">;</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">(</span><span class="nx">AVGLE_CATEGORIES_API_URL</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">categories</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">response</span><span class="p">.</span><span class="nx">categories</span><span class="p">;</span>
+        <span class="nx">doSomethingWith</span><span class="p">(</span><span class="nx">categories</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">})</span>
 </code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre>
-<pre class="highlight shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre>
-
-<blockquote>
-<p>Make sure to replace <code class="prettyprint">meowmeowmeow</code> with your API key.</p>
-</blockquote>
-
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
-
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
-
-<p><code class="prettyprint">Authorization: meowmeowmeow</code></p>
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-
-<h1 id="kittens">Kittens</h1>
-
-<h2 id="get-all-kittens">Get All Kittens</h2>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre>
-
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
-<pre class="highlight json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"success"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"response"</span><span class="p">:{</span><span class="w">
+        </span><span class="s2">"categories"</span><span class="p">:[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"CHID"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="s2">"Happy videos"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"slug"</span><span class="p">:</span><span class="s2">"happy-videos"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"total_videos"</span><span class="p">:</span><span class="mi">349</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"CHID"</span><span class="p">:</span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Good videos"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"slug"</span><span class="p">:</span><span class="s2">"good-videos"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"total_videos"</span><span class="p">:</span><span class="mi">2500</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
 </span></code></pre>
-
-<p>This endpoint retrieves all kittens.</p>
+<p>This endpoint retrieves all the video categories.</p>
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://example.com/api/kittens</code></p>
+<p><code class="prettyprint">GET https://api.avgle.com/v1/categories</code></p>
+
+<aside class="success">
+You can include CHID as a query parameter in search videos API or list videos API to filter results.
+</aside>
+
+<h1 id="video-collections">Video collections</h1>
+
+<p>A video collection denotes a series of videos. All the videos in a series include the <code class="prettyprint">keyword</code> specified.</p>
+
+<p>In other words, they are recommended searches.</p>
+
+<h2 id="get-all-video-collections">Get all video collections</h2>
+<pre class="highlight php tab-php"><code>$AVGLE_LIST_COLLECTIONS_API_URL = 'https://api.avgle.com/v1/collections/';
+$page = 0;
+$limit = '?limit=2';
+$response = json_decode(file_get_contents($url . $page . $limit), true);
+var_dump($response);
+if ($response['success']) {
+    $collections = $response['response']['collections'];
+    doSomethingWith($collections);
+}
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">urllib.request</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="n">AVGLE_LIST_COLLECTIONS_API_URL</span> <span class="o">=</span> <span class="s">'https://api.avgle.com/v1/collections/{}?limit={}'</span>
+<span class="n">page</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">limit</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="nb">open</span><span class="p">(</span><span class="n">url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">page</span><span class="p">,</span> <span class="n">limit</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">response</span><span class="p">[</span><span class="s">'success'</span><span class="p">]:</span>
+    <span class="n">collections</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="s">'response'</span><span class="p">][</span><span class="s">'collections'</span><span class="p">]</span>
+    <span class="n">do_something_with</span><span class="p">(</span><span class="n">collections</span><span class="p">)</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// node.js</span>
+<span class="kr">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'request'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">AVGLE_LIST_COLLECTIONS_API_URL</span> <span class="o">=</span> <span class="s1">'https://api.avgle.com/v1/collections/'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">limit</span> <span class="o">=</span> <span class="s1">'?limit=2'</span><span class="p">;</span>
+<span class="nx">request</span><span class="p">(</span><span class="nx">AVGLE_LIST_COLLECTIONS_API_URL</span> <span class="o">+</span> <span class="nx">page</span> <span class="o">+</span> <span class="nx">limit</span><span class="p">,</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">response</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">body</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">collections</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">response</span><span class="p">.</span><span class="nx">collections</span><span class="p">;</span>
+        <span class="nx">doSomethingWith</span><span class="p">(</span><span class="nx">collections</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="c1">// jQuery</span>
+<span class="kd">var</span> <span class="nx">AVGLE_LIST_COLLECTIONS_API_URL</span> <span class="o">=</span> <span class="s1">'https://api.avgle.com/v1/collections'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">limit</span> <span class="o">=</span> <span class="s1">'?limit=2'</span><span class="p">;</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">(</span><span class="nx">AVGLE_LIST_COLLECTIONS_API_URL</span> <span class="o">+</span> <span class="nx">page</span> <span class="o">+</span> <span class="nx">limit</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">collections</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">response</span><span class="p">.</span><span class="nx">collections</span><span class="p">;</span>
+        <span class="nx">doSomethingWith</span><span class="p">(</span><span class="nx">collections</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">})</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">  
+    </span><span class="s2">"success"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"response"</span><span class="p">:{</span><span class="w">  
+        </span><span class="s2">"has_more"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"total_collections"</span><span class="p">:</span><span class="mi">88</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"current_offset"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"limit"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"collections"</span><span class="p">:[</span><span class="w">  
+            </span><span class="p">{</span><span class="w">  
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">"A set of happy videos"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"keyword"</span><span class="p">:</span><span class="s2">"happy"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cover_url"</span><span class="p">:</span><span class="s2">"https://static.avgle.com/happy.jpg"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"total_views"</span><span class="p">:</span><span class="mi">191504</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video_count"</span><span class="p">:</span><span class="mi">17</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">  
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">"A set of cool videos"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"keyword"</span><span class="p">:</span><span class="s2">"cool"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cover_url"</span><span class="p">:</span><span class="s2">"https://static.avgle.com/cool.jpg"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"total_views"</span><span class="p">:</span><span class="mi">115927</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video_count"</span><span class="p">:</span><span class="mi">11</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all the video collections.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://api.avgle.com/v1/collections/&lt;page&gt;</code></p>
+
+<h3 id="url-parameters">URL Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Possible values</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>page</td>
+<td>0 based pagination</td>
+<td>[0, +inf)</td>
+</tr>
+</tbody></table>
 
 <h3 id="query-parameters">Query Parameters</h3>
 
@@ -210,58 +424,162 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 <th>Parameter</th>
 <th>Default</th>
 <th>Description</th>
+<th>Possible values</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
+<td>limit</td>
+<td>50</td>
+<td>The maximum number of video collections in the API response per page.</td>
+<td>[1, 250]</td>
+</tr>
+</tbody></table>
+
+<h3 id="response">Response</h3>
+
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>has_more</td>
+<td><code class="prettyprint">true</code> means there is next page. <code class="prettyprint">false</code> otherwise.</td>
 </tr>
 <tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
+<td>total_collections</td>
+<td>The number of video collections.</td>
+</tr>
+<tr>
+<td>current_offset</td>
+<td>The number of video collections skipped by pagination.</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>The maximum number of video collections the API response per page will include.</td>
+</tr>
+<tr>
+<td>collection &gt; keyword</td>
+<td>The keyword of the collection which is used as search query.</td>
+</tr>
+<tr>
+<td>collection &gt; total_views</td>
+<td>The total views of the videos in the video collection.</td>
+</tr>
+<tr>
+<td>collection &gt; video_count</td>
+<td>The number of videos in the video collection.</td>
 </tr>
 </tbody></table>
 
 <aside class="success">
-Remember — a happy kitten is an authenticated kitten!
+You can use keyword as the search query in search videos API to retrieve all related videos.
 </aside>
 
-<h2 id="get-a-specific-kitten">Get a Specific Kitten</h2>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<h1 id="videos">Videos</h1>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<h2 id="list-all-videos">List all videos</h2>
+<pre class="highlight php tab-php"><code>$AVGLE_LIST_VIDEOS_API_URL = 'https://api.avgle.com/v1/videos/';
+$page = 0;
+$limit = '?limit=2';
+$response = json_decode(file_get_contents($url . $page . $limit), true);
+var_dump($response);
+if ($response['success']) {
+    $videos = $response['response']['videos'];
+    doSomethingWith($videos);
+}
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">urllib.request</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="n">AVGLE_LIST_VIDEOS_API_URL</span> <span class="o">=</span> <span class="s">'https://api.avgle.com/v1/videos/{}?limit={}'</span>
+<span class="n">page</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">limit</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="nb">open</span><span class="p">(</span><span class="n">url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">page</span><span class="p">,</span> <span class="n">limit</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">response</span><span class="p">[</span><span class="s">'success'</span><span class="p">]:</span>
+    <span class="n">videos</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="s">'response'</span><span class="p">][</span><span class="s">'videos'</span><span class="p">]</span>
+    <span class="n">do_something_with</span><span class="p">(</span><span class="n">videos</span><span class="p">)</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// node.js</span>
+<span class="kr">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'request'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">AVGLE_LIST_VIDEOS_API_URL</span> <span class="o">=</span> <span class="s1">'https://api.avgle.com/v1/videos/'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">limit</span> <span class="o">=</span> <span class="s1">'?limit=2'</span><span class="p">;</span>
+<span class="nx">request</span><span class="p">(</span><span class="nx">AVGLE_LIST_VIDEOS_API_URL</span> <span class="o">+</span> <span class="nx">page</span> <span class="o">+</span> <span class="nx">limit</span><span class="p">,</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">response</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">body</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">videos</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">response</span><span class="p">.</span><span class="nx">videos</span><span class="p">;</span>
+        <span class="nx">doSomethingWith</span><span class="p">(</span><span class="nx">videos</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="c1">// jQuery</span>
+<span class="kd">var</span> <span class="nx">AVGLE_LIST_VIDEOS_API_URL</span> <span class="o">=</span> <span class="s1">'https://api.avgle.com/v1/videos'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">limit</span> <span class="o">=</span> <span class="s1">'?limit=2'</span><span class="p">;</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">(</span><span class="nx">AVGLE_LIST_VIDEOS_API_URL</span> <span class="o">+</span> <span class="nx">page</span> <span class="o">+</span> <span class="nx">limit</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">videos</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">response</span><span class="p">.</span><span class="nx">videos</span><span class="p">;</span>
+        <span class="nx">doSomethingWith</span><span class="p">(</span><span class="nx">videos</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">})</span>
 </code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre>
-
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
-<pre class="highlight json"><code><span class="p">{</span><span class="w">
-  </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">  
+    </span><span class="s2">"success"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"response"</span><span class="p">:{</span><span class="w">  
+        </span><span class="s2">"has_more"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"total_videos"</span><span class="p">:</span><span class="mi">27352</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"current_offset"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"limit"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"videos"</span><span class="p">:[</span><span class="w">  
+            </span><span class="p">{</span><span class="w">  
+                </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">"happy-video"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"keyword"</span><span class="p">:</span><span class="s2">"happy"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"channel"</span><span class="p">:</span><span class="s2">"17"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"duration"</span><span class="p">:</span><span class="mf">112.8</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"framerate"</span><span class="p">:</span><span class="mf">23.976</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"hd"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"addtime"</span><span class="p">:</span><span class="mi">1491552611</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"viewnumber"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"likes"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"dislikes"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/video/38329/happy-video"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"embedded_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/embed/754cc72672b40296c76e"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"preview_url"</span><span class="p">:</span><span class="s2">"https://static.qooqlevideo.com/media/videos/tmb/38329/1.jpg"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"vid"</span><span class="p">:</span><span class="s2">"38329"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="s2">"1"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">  
+                </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">"cool-video"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"keyword"</span><span class="p">:</span><span class="s2">"cool"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"channel"</span><span class="p">:</span><span class="s2">"17"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"duration"</span><span class="p">:</span><span class="mf">209.58</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"framerate"</span><span class="p">:</span><span class="mf">23.976</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"hd"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"addtime"</span><span class="p">:</span><span class="mi">1491552558</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"viewnumber"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"likes"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"dislikes"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/video/38328/cool-video"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"embedded_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/embed/07ce8a9652a76f02df10"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"preview_url"</span><span class="p">:</span><span class="s2">"https://static.qooqlevideo.com/media/videos/tmb/38328/1.jpg"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"vid"</span><span class="p">:</span><span class="s2">"38328"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="s2">"1"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-
-<p>This endpoint retrieves a specific kitten.</p>
-
-<aside class="warning">Inside HTML code blocks like this one, you can&rsquo;t use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+<p>This endpoint retrieves all the videos in criteria.</p>
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://example.com/kittens/&lt;ID&gt;</code></p>
+<p><code class="prettyprint">GET https://api.avgle.com/v1/videos/&lt;page&gt;</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -269,19 +587,350 @@ Remember — a happy kitten is an authenticated kitten!
 <tr>
 <th>Parameter</th>
 <th>Description</th>
+<th>Possible values</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
+<td>page</td>
+<td>0 based pagination</td>
+<td>[0, +inf)</td>
 </tr>
 </tbody></table>
 
+<h3 id="query-parameters">Query Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+<th>Possible values</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>o</td>
+<td>mr</td>
+<td>Videos ordering method. DESC order. For example, <code class="prettyprint">mr</code> shows the latest videos in page 0.</td>
+<td>bw (Last viewed)<br/>mr (Latest)<br/>mv (Most viewed)<br/>tr (Top rated)<br/>tf (Most favoured)<br/>lg (Longest)</td>
+</tr>
+<tr>
+<td>t</td>
+<td>a</td>
+<td>Time frame. Videos older than the specified age will not be showed. For example, <code class="prettyprint">w</code> shows only the videos uploaded from 7 days ago to now.</td>
+<td>t (1 day)<br/>w (1 week)<br/>m (1 month)<br/>a (Forever)</td>
+</tr>
+<tr>
+<td>type</td>
+<td>(null)</td>
+<td>Show only public or private videos, or show all videos if <code class="prettyprint">type</code> not specified.</td>
+<td>public<br/>private</td>
+</tr>
+<tr>
+<td>c</td>
+<td>(null)</td>
+<td>Show only videos within the specified video category. For example, <code class="prettyprint">c</code>=1 shows only videos in &lsquo;Happy videos&rsquo; categories. See <a href="#video-categories">above</a>.</td>
+<td>CHID of a valid video category (integer)</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>50</td>
+<td>The maximum number of videos in the API response per page.</td>
+<td>[1, 250]</td>
+</tr>
+</tbody></table>
+
+<h3 id="response">Response</h3>
+
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>has_more</td>
+<td><code class="prettyprint">true</code> means there is next page. <code class="prettyprint">false</code> otherwise.</td>
+</tr>
+<tr>
+<td>total_videos</td>
+<td>The number of videos in criteria.</td>
+</tr>
+<tr>
+<td>current_offset</td>
+<td>The number of videos skipped by pagination.</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>The maximum number of videos the API response per page will include.</td>
+</tr>
+<tr>
+<td>video &gt; channel</td>
+<td>Video category&rsquo;s ID (CHID).</td>
+</tr>
+<tr>
+<td>video &gt; duration</td>
+<td>Video duration in seconds.</td>
+</tr>
+<tr>
+<td>video &gt; video_url</td>
+<td>The viewing URL to the video.</td>
+</tr>
+<tr>
+<td>video &gt; embedded_url</td>
+<td>The URL showing an embedded player of the video.</td>
+</tr>
+</tbody></table>
+
+<h2 id="search-videos">Search videos</h2>
+<pre class="highlight php tab-php"><code>$AVGLE_SEARCH_VIDEOS_API_URL = 'https://api.avgle.com/v1/search/';
+$query = 'happy';
+$page = 0;
+$limit = '?limit=2';
+$response = json_decode(file_get_contents($url . urlencode($query). '/' . $page . $limit), true);
+var_dump($response);
+if ($response['success']) {
+    $videos = $response['response']['videos'];
+    doSomethingWith($videos);
+}
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">urllib.request</span>
+<span class="kn">import</span> <span class="nn">urllib.parse</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="n">AVGLE_SEARCH_VIDEOS_API_URL</span> <span class="o">=</span> <span class="s">'https://api.avgle.com/v1/search/{}/{}?limit={}'</span>
+<span class="n">query</span> <span class="o">=</span> <span class="s">'happy'</span>
+<span class="n">page</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">limit</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="nb">open</span><span class="p">(</span><span class="n">url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">quote_plus</span><span class="p">(</span><span class="n">query</span><span class="p">),</span> <span class="n">page</span><span class="p">,</span> <span class="n">limit</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">response</span><span class="p">[</span><span class="s">'success'</span><span class="p">]:</span>
+    <span class="n">videos</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="s">'response'</span><span class="p">][</span><span class="s">'videos'</span><span class="p">]</span>
+    <span class="n">do_something_with</span><span class="p">(</span><span class="n">videos</span><span class="p">)</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// node.js</span>
+<span class="kr">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'request'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">AVGLE_SEARCH_VIDEOS_API_URL</span> <span class="o">=</span> <span class="s1">'https://api.avgle.com/v1/search/'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">query</span> <span class="o">=</span> <span class="s1">'happy'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">limit</span> <span class="o">=</span> <span class="s1">'?limit=2'</span><span class="p">;</span>
+<span class="nx">request</span><span class="p">(</span><span class="nx">AVGLE_SEARCH_VIDEOS_API_URL</span> <span class="o">+</span> <span class="nb">encodeURIComponent</span><span class="p">(</span><span class="nx">query</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'/'</span> <span class="o">+</span> <span class="nx">page</span> <span class="o">+</span> <span class="nx">limit</span><span class="p">,</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">response</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">body</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">videos</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">response</span><span class="p">.</span><span class="nx">videos</span><span class="p">;</span>
+        <span class="nx">doSomethingWith</span><span class="p">(</span><span class="nx">videos</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="c1">// jQuery</span>
+<span class="kd">var</span> <span class="nx">AVGLE_SEARCH_VIDEOS_API_URL</span> <span class="o">=</span> <span class="s1">'https://api.avgle.com/v1/search'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">query</span> <span class="o">=</span> <span class="s1">'happy'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">limit</span> <span class="o">=</span> <span class="s1">'?limit=2'</span><span class="p">;</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">(</span><span class="nx">AVGLE_SEARCH_VIDEOS_API_URL</span> <span class="o">+</span> <span class="nb">encodeURIComponent</span><span class="p">(</span><span class="nx">query</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'/'</span> <span class="o">+</span> <span class="nx">page</span> <span class="o">+</span> <span class="nx">limit</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">videos</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">response</span><span class="p">.</span><span class="nx">videos</span><span class="p">;</span>
+        <span class="nx">doSomethingWith</span><span class="p">(</span><span class="nx">videos</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">})</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">  
+    </span><span class="s2">"success"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"response"</span><span class="p">:{</span><span class="w">  
+        </span><span class="s2">"has_more"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"total_videos"</span><span class="p">:</span><span class="mi">123</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"current_offset"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"limit"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"videos"</span><span class="p">:[</span><span class="w">  
+            </span><span class="p">{</span><span class="w">  
+                </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">"happy-video"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"keyword"</span><span class="p">:</span><span class="s2">"happy"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"channel"</span><span class="p">:</span><span class="s2">"17"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"duration"</span><span class="p">:</span><span class="mf">112.8</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"framerate"</span><span class="p">:</span><span class="mf">23.976</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"hd"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"addtime"</span><span class="p">:</span><span class="mi">1491552611</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"viewnumber"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"likes"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"dislikes"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/video/38329/happy-video"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"embedded_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/embed/754cc72675b40296c76e"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"preview_url"</span><span class="p">:</span><span class="s2">"https://static.qooqlevideo.com/media/videos/tmb/38329/1.jpg"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"vid"</span><span class="p">:</span><span class="s2">"38329"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="s2">"1"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">  
+                </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">"awesome-video"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"keyword"</span><span class="p">:</span><span class="s2">"awesome happy"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"channel"</span><span class="p">:</span><span class="s2">"17"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"duration"</span><span class="p">:</span><span class="mf">209.58</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"framerate"</span><span class="p">:</span><span class="mf">23.976</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"hd"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"addtime"</span><span class="p">:</span><span class="mi">1491552554</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"viewnumber"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"likes"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"dislikes"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/video/38327/awesome-video"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"embedded_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/embed/07ce8a4652a76f02df10"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"preview_url"</span><span class="p">:</span><span class="s2">"https://static.qooqlevideo.com/media/videos/tmb/38327/1.jpg"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"vid"</span><span class="p">:</span><span class="s2">"38327"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="s2">"1"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves the videos matches the search query which are in criteria.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://api.avgle.com/v1/search/&lt;query&gt;/&lt;page&gt;</code></p>
+
+<h3 id="url-parameters">URL Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Possible values</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>query</td>
+<td>Search query</td>
+<td>URL escaped non empty string</td>
+</tr>
+<tr>
+<td>page</td>
+<td>0 based pagination</td>
+<td>[0, +inf)</td>
+</tr>
+</tbody></table>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<p>See <a href="#list-all-videos">above</a>.</p>
+
+<h3 id="response">Response</h3>
+
+<p>See <a href="#list-all-videos">above</a>.</p>
+
+<h2 id="get-video-by-vid">Get video by VID</h2>
+<pre class="highlight php tab-php"><code>$AVGLE_GET_VIDEO_API_URL = 'https://api.avgle.com/v1/video/';
+$vid = '38329';
+$response = json_decode(file_get_contents($url . $vid), true);
+var_dump($response);
+if ($response['success']) {
+    $video = $response['response']['video'];
+    doSomethingWith($video);
+}
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">urllib.request</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="n">AVGLE_GET_VIDEO_API_URL</span> <span class="o">=</span> <span class="s">'https://api.avgle.com/v1/video/{}'</span>
+<span class="n">vid</span> <span class="o">=</span> <span class="s">'38329'</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="nb">open</span><span class="p">(</span><span class="n">url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">vid</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">response</span><span class="p">[</span><span class="s">'success'</span><span class="p">]:</span>
+    <span class="n">video</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="s">'response'</span><span class="p">][</span><span class="s">'video'</span><span class="p">]</span>
+    <span class="n">do_something_with</span><span class="p">(</span><span class="n">video</span><span class="p">)</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// node.js</span>
+<span class="kr">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'request'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">AVGLE_GET_VIDEO_API_URL</span> <span class="o">=</span> <span class="s1">'https://api.avgle.com/v1/video/'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">vid</span> <span class="o">=</span> <span class="s1">'38329'</span><span class="p">;</span>
+<span class="nx">request</span><span class="p">(</span><span class="nx">AVGLE_GET_VIDEO_API_URL</span> <span class="o">+</span> <span class="nx">vid</span><span class="p">,</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">response</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">body</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">video</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">response</span><span class="p">.</span><span class="nx">video</span><span class="p">;</span>
+        <span class="nx">doSomethingWith</span><span class="p">(</span><span class="nx">video</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="c1">// jQuery</span>
+<span class="kd">var</span> <span class="nx">AVGLE_GET_VIDEO_API_URL</span> <span class="o">=</span> <span class="s1">'https://api.avgle.com/v1/video'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">vid</span> <span class="o">=</span> <span class="s1">'38329'</span><span class="p">;</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">(</span><span class="nx">AVGLE_GET_VIDEO_API_URL</span> <span class="o">+</span> <span class="nx">vid</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">video</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">response</span><span class="p">.</span><span class="nx">video</span><span class="p">;</span>
+        <span class="nx">doSomethingWith</span><span class="p">(</span><span class="nx">video</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">})</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">  
+    </span><span class="s2">"success"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"response"</span><span class="p">:{</span><span class="w">  
+        </span><span class="s2">"video"</span><span class="p">:{</span><span class="w">  
+            </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">"happy-video"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"keyword"</span><span class="p">:</span><span class="s2">"happy"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"channel"</span><span class="p">:</span><span class="s2">"17"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"duration"</span><span class="p">:</span><span class="mf">112.8</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"framerate"</span><span class="p">:</span><span class="mf">23.976</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"hd"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"addtime"</span><span class="p">:</span><span class="mi">1491552611</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"viewnumber"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"likes"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"dislikes"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/video/38329/happy-video"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"embedded_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/embed/754cc72675b40296c76e"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"preview_url"</span><span class="p">:</span><span class="s2">"https://static.qooqlevideo.com/media/videos/tmb/38329/1.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"vid"</span><span class="p">:</span><span class="s2">"38329"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"uid"</span><span class="p">:</span><span class="s2">"1"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Or if video is not found (404)</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">  
+    </span><span class="s2">"success"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"response"</span><span class="p">:{</span><span class="w">  
+        </span><span class="s2">"error_message"</span><span class="p">:</span><span class="s2">"Video of VID 38329 not found."</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves the video of specified VID.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://api.avgle.com/v1/video/&lt;VID&gt;</code></p>
+
+<h3 id="url-parameters">URL Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Possible values</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>VID</td>
+<td>ID of the video</td>
+<td>Integer</td>
+</tr>
+</tbody></table>
+
+<h3 id="response">Response</h3>
+
+<p>See <a href="#list-all-videos">above</a>.</p>
+
+<h1 id="rate-limitation">Rate limitation</h1>
+
+<p>Avgle API v1 does not currently impose any explicit rate limit. However, it&rsquo;s possible for us to impose rate limit anytime depends on the system load without announcement.</p>
+
+<p>When rate limit exceeded, a <code class="prettyprint">429 Too Many Requests</code> response will be sent.</p>
+
           <h1 id="errors">Errors</h1>
 
-<aside class="notice">This error section is stored in a separate file in `includes/_errors.md`. Slate allows you to optionally separate out your docs into many files&hellip;just save them to the `includes` folder and add them to the top of your `index.md`&rsquo;s frontmatter. Files are included in the order listed.</aside>
-
-<p>The Kittn API uses the following error codes:</p>
+<p>The Avgle API v1 uses the following error codes:</p>
 
 <table><thead>
 <tr>
@@ -294,53 +943,25 @@ Remember — a happy kitten is an authenticated kitten!
 <td>Bad Request &ndash; Your request sucks</td>
 </tr>
 <tr>
-<td>401</td>
-<td>Unauthorized &ndash; Your API key is wrong</td>
-</tr>
-<tr>
-<td>403</td>
-<td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
-</tr>
-<tr>
 <td>404</td>
-<td>Not Found &ndash; The specified kitten could not be found</td>
-</tr>
-<tr>
-<td>405</td>
-<td>Method Not Allowed &ndash; You tried to access a kitten with an invalid method</td>
-</tr>
-<tr>
-<td>406</td>
-<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
-</tr>
-<tr>
-<td>410</td>
-<td>Gone &ndash; The kitten requested has been removed from our servers</td>
-</tr>
-<tr>
-<td>418</td>
-<td>I&rsquo;m a teapot</td>
+<td>Not Found &ndash; The specified video could not be found</td>
 </tr>
 <tr>
 <td>429</td>
-<td>Too Many Requests &ndash; You&rsquo;re requesting too many kittens! Slow down!</td>
+<td>Too Many Requests &ndash; You&rsquo;re requesting too fast! Slow down!</td>
 </tr>
 <tr>
-<td>500</td>
+<td>5xx</td>
 <td>Internal Server Error &ndash; We had a problem with our server. Try again later.</td>
-</tr>
-<tr>
-<td>503</td>
-<td>Service Unavailable &ndash; We&rsquo;re temporarially offline for maintanance. Please try again later.</td>
 </tr>
 </tbody></table>
 
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
+                <a href="#" data-language-name="php">php</a>
                 <a href="#" data-language-name="python">python</a>
+                <a href="#" data-language-name="javascript">javascript</a>
           </div>
       </div>
     </div>
