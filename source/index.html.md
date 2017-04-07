@@ -1,14 +1,12 @@
 ---
-title: API Reference
+title: Avgle API v1 Reference
 
 language_tabs:
-  - shell
-  - ruby
+  - php
   - python
   - javascript
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
   - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
 includes:
@@ -19,171 +17,611 @@ search: true
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Welcome to the Avgle API! You can use our API to access information like videos and categories in our database.
 
-We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
-
-This example API documentation page was created with [Slate](https://github.com/tripit/slate). Feel free to edit it and use it as a base for your own API's documentation.
+We have language bindings in Javascript, PHP, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
 # Authentication
 
-> To authorize, use this code:
+Avgle API v1 is public and free to use. Neither authentication nor API keys is needed.
 
-```ruby
-require 'kittn'
+# Video categories
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
+## Get all video categories
+
+```php
+$AVGLE_CATEGORIES_API_URL = 'https://api.avgle.com/v1/categories';
+$response = json_decode(file_get_contents($url), true);
+var_dump($response);
+if ($response['success']) {
+    $categories = $response['response']['categories'];
+    doSomethingWith($categories);
+}
 ```
 
 ```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-```
-
-```shell
-# With shell, you can just pass the correct header with each request
-curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-```
-
-> Make sure to replace `meowmeowmeow` with your API key.
-
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
-
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
-
-`Authorization: meowmeowmeow`
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-
-# Kittens
-
-## Get All Kittens
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
+import urllib.request
+import json
+AVGLE_CATEGORIES_API_URL = 'https://api.avgle.com/v1/categories'
+response = json.loads(urllib.request.open(url).read().decode())
+print(response)
+if response['success']:
+    categories = response['response']['categories']
+    do_something_with(categories)
 ```
 
 ```javascript
-const kittn = require('kittn');
+// node.js
+const request = require('request');
+const AVGLE_CATEGORIES_API_URL = 'https://api.avgle.com/v1/categories';
+request(AVGLE_CATEGORIES_API_URL, (error, response, body) => {
+    if (err) return console.log(err);
+    var response = JSON.parse(body);
+    console.log(response);
+    if (response.success) {
+        var categories = response.response.categories;
+        doSomethingWith(categories);
+    }
+});
 
-let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
-```
-
-> The above command returns JSON structured like this:
-
-```json
-[
-  {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
-  },
-  {
-    "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
-  }
-]
-```
-
-This endpoint retrieves all kittens.
-
-### HTTP Request
-
-`GET http://example.com/api/kittens`
-
-### Query Parameters
-
-Parameter | Default | Description
---------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-
-## Get a Specific Kitten
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.get(2);
+// jQuery
+var AVGLE_CATEGORIES_API_URL = 'https://api.avgle.com/v1/categories';
+$.getJSON(AVGLE_CATEGORIES_API_URL, function (response) {
+    console.log(response);
+    if (response.success) {
+        var categories = response.response.categories;
+        doSomethingWith(categories);
+    }
+})
 ```
 
 > The above command returns JSON structured like this:
 
 ```json
 {
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
+    "success":true,
+    "response":{
+        "categories":[
+            {
+                "CHID":"1",
+                "name":"Happy videos",
+                "slug":"happy-videos",
+                "total_videos":349
+            },
+            {
+                "CHID":"2",
+                "name": "Good videos",
+                "slug":"good-videos",
+                "total_videos":2500
+            }
+        ]
+    }
 }
 ```
 
-This endpoint retrieves a specific kitten.
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+This endpoint retrieves all the video categories.
 
 ### HTTP Request
 
-`GET http://example.com/kittens/<ID>`
+`GET https://api.avgle.com/v1/categories`
+
+<aside class="success">
+You can include CHID as a query parameter in search videos API or list videos API to filter results.
+</aside>
+
+# Video collections
+
+A video collection denotes a series of videos. All the videos in a series include the `keyword` specified.
+
+In other words, they are recommended searches.
+
+## Get all video collections
+
+```php
+$AVGLE_LIST_COLLECTIONS_API_URL = 'https://api.avgle.com/v1/collections/';
+$page = 0;
+$limit = '?limit=2';
+$response = json_decode(file_get_contents($url . $page . $limit), true);
+var_dump($response);
+if ($response['success']) {
+    $collections = $response['response']['collections'];
+    doSomethingWith($collections);
+}
+```
+
+```python
+import urllib.request
+import json
+AVGLE_LIST_COLLECTIONS_API_URL = 'https://api.avgle.com/v1/collections/{}?limit={}'
+page = 0
+limit = 2
+response = json.loads(urllib.request.open(url.format(page, limit)).read().decode())
+print(response)
+if response['success']:
+    collections = response['response']['collections']
+    do_something_with(collections)
+```
+
+```javascript
+// node.js
+const request = require('request');
+const AVGLE_LIST_COLLECTIONS_API_URL = 'https://api.avgle.com/v1/collections/';
+var page = 0;
+var limit = '?limit=2';
+request(AVGLE_LIST_COLLECTIONS_API_URL + page + limit, (error, response, body) => {
+    if (err) return console.log(err);
+    var response = JSON.parse(body);
+    console.log(response);
+    if (response.success) {
+        var collections = response.response.collections;
+        doSomethingWith(collections);
+    }
+});
+
+// jQuery
+var AVGLE_LIST_COLLECTIONS_API_URL = 'https://api.avgle.com/v1/collections';
+var page = 0;
+var limit = '?limit=2';
+$.getJSON(AVGLE_LIST_COLLECTIONS_API_URL + page + limit, function (response) {
+    console.log(response);
+    if (response.success) {
+        var collections = response.response.collections;
+        doSomethingWith(collections);
+    }
+})
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{  
+    "success":true,
+    "response":{  
+        "has_more":true,
+        "total_collections":88,
+        "current_offset":0,
+        "limit":2,
+        "collections":[  
+            {  
+                "id":"1",
+                "title":"A set of happy videos",
+                "keyword":"happy",
+                "cover_url":"https://static.avgle.com/happy.jpg",
+                "total_views":191504,
+                "video_count":17
+            },
+            {  
+                "id":"2",
+                "title":"A set of cool videos",
+                "keyword":"cool",
+                "cover_url":"https://static.avgle.com/cool.jpg",
+                "total_views":115927,
+                "video_count":11
+            }
+        ]
+    }
+}
+```
+
+This endpoint retrieves all the video collections.
+
+### HTTP Request
+
+`GET https://api.avgle.com/v1/collections/<page>`
 
 ### URL Parameters
 
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to retrieve
+Parameter | Description | Possible values
+--------- | ----------- | ---------------
+page | 0 based pagination | [0, +inf)
 
+### Query Parameters
+
+Parameter | Default | Description | Possible values
+--------- | ------- | ----------- | ---------------
+limit | 50 | The maximum number of video collections in the API response per page. | [1, 250]
+
+### Response
+
+Key | Description
+--- | -----------
+has_more | `true` means there is next page. `false` otherwise.
+total_collections | The number of video collections.
+current_offset | The number of video collections skipped by pagination.
+limit | The maximum number of video collections the API response per page will include.
+collection > keyword | The keyword of the collection which is used as search query.
+collection > total_views | The total views of the videos in the video collection.
+collection > video_count | The number of videos in the video collection.
+
+<aside class="success">
+You can use keyword as the search query in search videos API to retrieve all related videos.
+</aside>
+
+# Videos
+
+## List all videos
+
+```php
+$AVGLE_LIST_VIDEOS_API_URL = 'https://api.avgle.com/v1/videos/';
+$page = 0;
+$limit = '?limit=2';
+$response = json_decode(file_get_contents($url . $page . $limit), true);
+var_dump($response);
+if ($response['success']) {
+    $videos = $response['response']['videos'];
+    doSomethingWith($videos);
+}
+```
+
+```python
+import urllib.request
+import json
+AVGLE_LIST_VIDEOS_API_URL = 'https://api.avgle.com/v1/videos/{}?limit={}'
+page = 0
+limit = 2
+response = json.loads(urllib.request.open(url.format(page, limit)).read().decode())
+print(response)
+if response['success']:
+    videos = response['response']['videos']
+    do_something_with(videos)
+```
+
+```javascript
+// node.js
+const request = require('request');
+const AVGLE_LIST_VIDEOS_API_URL = 'https://api.avgle.com/v1/videos/';
+var page = 0;
+var limit = '?limit=2';
+request(AVGLE_LIST_VIDEOS_API_URL + page + limit, (error, response, body) => {
+    if (err) return console.log(err);
+    var response = JSON.parse(body);
+    console.log(response);
+    if (response.success) {
+        var videos = response.response.videos;
+        doSomethingWith(videos);
+    }
+});
+
+// jQuery
+var AVGLE_LIST_VIDEOS_API_URL = 'https://api.avgle.com/v1/videos';
+var page = 0;
+var limit = '?limit=2';
+$.getJSON(AVGLE_LIST_VIDEOS_API_URL + page + limit, function (response) {
+    console.log(response);
+    if (response.success) {
+        var videos = response.response.videos;
+        doSomethingWith(videos);
+    }
+})
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{  
+    "success":true,
+    "response":{  
+        "has_more":true,
+        "total_videos":27352,
+        "current_offset":0,
+        "limit":2,
+        "videos":[  
+            {  
+                "title":"happy-video",
+                "keyword":"happy",
+                "channel":"17",
+                "duration":112.8,
+                "framerate":23.976,
+                "hd":false,
+                "addtime":1491552611,
+                "viewnumber":0,
+                "likes":0,
+                "dislikes":0,
+                "video_url":"https://avgle.com/video/38329/happy-video",
+                "embedded_url":"https://avgle.com/embed/754cc72672b40296c76e",
+                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/38329/1.jpg",
+                "vid":"38329",
+                "uid":"1"
+            },
+            {  
+                "title":"cool-video",
+                "keyword":"cool",
+                "channel":"17",
+                "duration":209.58,
+                "framerate":23.976,
+                "hd":false,
+                "addtime":1491552558,
+                "viewnumber":0,
+                "likes":0,
+                "dislikes":0,
+                "video_url":"https://avgle.com/video/38328/cool-video",
+                "embedded_url":"https://avgle.com/embed/07ce8a9652a76f02df10",
+                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/38328/1.jpg",
+                "vid":"38328",
+                "uid":"1"
+            }
+        ]
+    }
+}
+```
+
+This endpoint retrieves all the videos in criteria.
+
+### HTTP Request
+
+`GET https://api.avgle.com/v1/videos/<page>`
+
+### URL Parameters
+
+Parameter | Description | Possible values
+--------- | ----------- | ---------------
+page | 0 based pagination | [0, +inf)
+
+
+### Query Parameters
+
+Parameter | Default | Description | Possible values
+--------- | ------- | ----------- | ---------------
+o | mr | Videos ordering method. DESC order. For example, `mr` shows the latest videos in page 0. | bw (Last viewed)<br/>mr (Latest)<br/>mv (Most viewed)<br/>tr (Top rated)<br/>tf (Most favoured)<br/>lg (Longest)
+t | a | Time frame. Videos older than the specified age will not be showed. For example, `w` shows only the videos uploaded from 7 days ago to now. | t (1 day)<br/>w (1 week)<br/>m (1 month)<br/>a (Forever)
+type | (null) | Show only public or private videos, or show all videos if `type` not specified. | public<br/>private
+c | (null) | Show only videos within the specified video category. For example, `c`=1 shows only videos in 'Happy videos' categories. See [above](#video-categories). | CHID of a valid video category (integer)
+limit | 50 | The maximum number of videos in the API response per page. | [1, 250]
+
+### Response
+
+Key | Description
+--- | -----------
+has_more | `true` means there is next page. `false` otherwise.
+total_videos | The number of videos in criteria.
+current_offset | The number of videos skipped by pagination.
+limit | The maximum number of videos the API response per page will include.
+video > channel | Video category's ID (CHID).
+video > duration | Video duration in seconds.
+video > video_url | The viewing URL to the video.
+video > embedded_url | The URL showing an embedded player of the video.
+
+## Search videos
+
+```php
+$AVGLE_SEARCH_VIDEOS_API_URL = 'https://api.avgle.com/v1/search/';
+$query = 'happy';
+$page = 0;
+$limit = '?limit=2';
+$response = json_decode(file_get_contents($url . urlencode($query). '/' . $page . $limit), true);
+var_dump($response);
+if ($response['success']) {
+    $videos = $response['response']['videos'];
+    doSomethingWith($videos);
+}
+```
+
+```python
+import urllib.request
+import urllib.parse
+import json
+AVGLE_SEARCH_VIDEOS_API_URL = 'https://api.avgle.com/v1/search/{}/{}?limit={}'
+query = 'happy'
+page = 0
+limit = 2
+response = json.loads(urllib.request.open(url.format(urllib.parse.quote_plus(query), page, limit)).read().decode())
+print(response)
+if response['success']:
+    videos = response['response']['videos']
+    do_something_with(videos)
+```
+
+```javascript
+// node.js
+const request = require('request');
+const AVGLE_SEARCH_VIDEOS_API_URL = 'https://api.avgle.com/v1/search/';
+var query = 'happy';
+var page = 0;
+var limit = '?limit=2';
+request(AVGLE_SEARCH_VIDEOS_API_URL + encodeURIComponent(query) + '/' + page + limit, (error, response, body) => {
+    if (err) return console.log(err);
+    var response = JSON.parse(body);
+    console.log(response);
+    if (response.success) {
+        var videos = response.response.videos;
+        doSomethingWith(videos);
+    }
+});
+
+// jQuery
+var AVGLE_SEARCH_VIDEOS_API_URL = 'https://api.avgle.com/v1/search';
+var query = 'happy';
+var page = 0;
+var limit = '?limit=2';
+$.getJSON(AVGLE_SEARCH_VIDEOS_API_URL + encodeURIComponent(query) + '/' + page + limit, function (response) {
+    console.log(response);
+    if (response.success) {
+        var videos = response.response.videos;
+        doSomethingWith(videos);
+    }
+})
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{  
+    "success":true,
+    "response":{  
+        "has_more":true,
+        "total_videos":123,
+        "current_offset":0,
+        "limit":2,
+        "videos":[  
+            {  
+                "title":"happy-video",
+                "keyword":"happy",
+                "channel":"17",
+                "duration":112.8,
+                "framerate":23.976,
+                "hd":false,
+                "addtime":1491552611,
+                "viewnumber":0,
+                "likes":0,
+                "dislikes":0,
+                "video_url":"https://avgle.com/video/38329/happy-video",
+                "embedded_url":"https://avgle.com/embed/754cc72675b40296c76e",
+                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/38329/1.jpg",
+                "vid":"38329",
+                "uid":"1"
+            },
+            {  
+                "title":"awesome-video",
+                "keyword":"awesome happy",
+                "channel":"17",
+                "duration":209.58,
+                "framerate":23.976,
+                "hd":false,
+                "addtime":1491552554,
+                "viewnumber":0,
+                "likes":0,
+                "dislikes":0,
+                "video_url":"https://avgle.com/video/38327/awesome-video",
+                "embedded_url":"https://avgle.com/embed/07ce8a4652a76f02df10",
+                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/38327/1.jpg",
+                "vid":"38327",
+                "uid":"1"
+            }
+        ]
+    }
+}
+```
+
+This endpoint retrieves the videos matches the search query which are in criteria.
+
+### HTTP Request
+
+`GET https://api.avgle.com/v1/search/<query>/<page>`
+
+### URL Parameters
+
+Parameter | Description | Possible values
+--------- | ----------- | ---------------
+query | Search query | URL escaped non empty string
+page | 0 based pagination | [0, +inf)
+
+
+### Query Parameters
+
+See [above](#list-all-videos).
+
+### Response
+
+See [above](#list-all-videos).
+
+## Get video by VID
+
+```php
+$AVGLE_GET_VIDEO_API_URL = 'https://api.avgle.com/v1/video/';
+$vid = '38329';
+$response = json_decode(file_get_contents($url . $vid), true);
+var_dump($response);
+if ($response['success']) {
+    $video = $response['response']['video'];
+    doSomethingWith($video);
+}
+```
+
+```python
+import urllib.request
+import json
+AVGLE_GET_VIDEO_API_URL = 'https://api.avgle.com/v1/video/{}'
+vid = '38329'
+response = json.loads(urllib.request.open(url.format(vid)).read().decode())
+print(response)
+if response['success']:
+    video = response['response']['video']
+    do_something_with(video)
+```
+
+```javascript
+// node.js
+const request = require('request');
+const AVGLE_GET_VIDEO_API_URL = 'https://api.avgle.com/v1/video/';
+var vid = '38329';
+request(AVGLE_GET_VIDEO_API_URL + vid, (error, response, body) => {
+    if (err) return console.log(err);
+    var response = JSON.parse(body);
+    console.log(response);
+    if (response.success) {
+        var video = response.response.video;
+        doSomethingWith(video);
+    }
+});
+
+// jQuery
+var AVGLE_GET_VIDEO_API_URL = 'https://api.avgle.com/v1/video';
+var vid = '38329';
+$.getJSON(AVGLE_GET_VIDEO_API_URL + vid, function (response) {
+    console.log(response);
+    if (response.success) {
+        var video = response.response.video;
+        doSomethingWith(video);
+    }
+})
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{  
+    "success":true,
+    "response":{  
+        "video":{  
+            "title":"happy-video",
+            "keyword":"happy",
+            "channel":"17",
+            "duration":112.8,
+            "framerate":23.976,
+            "hd":false,
+            "addtime":1491552611,
+            "viewnumber":0,
+            "likes":0,
+            "dislikes":0,
+            "video_url":"https://avgle.com/video/38329/happy-video",
+            "embedded_url":"https://avgle.com/embed/754cc72675b40296c76e",
+            "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/38329/1.jpg",
+            "vid":"38329",
+            "uid":"1"
+        }
+    }
+}
+```
+> Or if video is not found (404)
+
+```json
+{  
+    "success":false,
+    "response":{  
+        "error_message":"Video of VID 38329 not found."
+    }
+}
+```
+
+This endpoint retrieves the video of specified VID.
+
+### HTTP Request
+
+`GET https://api.avgle.com/v1/video/<VID>`
+
+### URL Parameters
+
+Parameter | Description | Possible values
+--------- | ----------- | ---------------
+VID | ID of the video | Integer
+
+
+### Response
+
+See [above](#list-all-videos).
+
+# Rate limitation
+
+Avgle API v1 does not currently impose any explicit rate limit. However, it's possible for us to impose rate limit anytime depends on the system load without announcement.
+
+When rate limit exceeded, a `429 Too Many Requests` response will be sent.
