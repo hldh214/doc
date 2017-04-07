@@ -86,13 +86,17 @@ $.getJSON(AVGLE_CATEGORIES_API_URL, function (response) {
                 "CHID":"1",
                 "name":"Happy videos",
                 "slug":"happy-videos",
-                "total_videos":349
+                "total_videos":349,
+                "category_url":"https://avgle.com/videos/happy-videos",
+                "cover_url":"https://static.avgle.com/media/categories/video/1.jpg"
             },
             {
                 "CHID":"2",
                 "name": "Good videos",
                 "slug":"good-videos",
-                "total_videos":2500
+                "total_videos":2500,
+                "category_url":"https://avgle.com/videos/good-videos",
+                "cover_url":"https://static.avgle.com/media/categories/video/2.jpg"
             }
         ]
     }
