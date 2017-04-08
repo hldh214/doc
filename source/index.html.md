@@ -528,6 +528,124 @@ See [above](#list-all-videos).
 
 See [above](#list-all-videos).
 
+## Search JAVs
+
+```php
+$AVGLE_SEARCH_JAV_API_URL = 'https://api.avgle.com/v1/jav/';
+$query = 'sdde-480';
+$page = 0;
+$limit = '?limit=2';
+$response = json_decode(file_get_contents($url . urlencode($query). '/' . $page . $limit), true);
+var_dump($response);
+if ($response['success']) {
+    $videos = $response['response']['videos'];
+    doSomethingWith($videos);
+}
+```
+
+```python
+import urllib.request
+import urllib.parse
+import json
+AVGLE_SEARCH_JAV_API_URL = 'https://api.avgle.com/v1/jav/{}/{}?limit={}'
+query = 'sdde-480'
+page = 0
+limit = 2
+response = json.loads(urllib.request.open(url.format(urllib.parse.quote_plus(query), page, limit)).read().decode())
+print(response)
+if response['success']:
+    videos = response['response']['videos']
+    do_something_with(videos)
+```
+
+```javascript
+// node.js
+const request = require('request');
+const AVGLE_SEARCH_JAV_API_URL = 'https://api.avgle.com/v1/jav/';
+var query = 'sdde-480';
+var page = 0;
+var limit = '?limit=2';
+request(AVGLE_SEARCH_JAV_API_URL + encodeURIComponent(query) + '/' + page + limit, (error, response, body) => {
+    if (err) return console.log(err);
+    var response = JSON.parse(body);
+    console.log(response);
+    if (response.success) {
+        var videos = response.response.videos;
+        doSomethingWith(videos);
+    }
+});
+
+// jQuery
+var AVGLE_SEARCH_JAV_API_URL = 'https://api.avgle.com/v1/jav';
+var query = 'sdde-480';
+var page = 0;
+var limit = '?limit=2';
+$.getJSON(AVGLE_SEARCH_JAV_API_URL + encodeURIComponent(query) + '/' + page + limit, function (response) {
+    console.log(response);
+    if (response.success) {
+        var videos = response.response.videos;
+        doSomethingWith(videos);
+    }
+})
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{  
+    "success":true,
+    "response":{  
+        "has_more":false,
+        "total_videos":1,
+        "current_offset":0,
+        "limit":1,
+        "videos":[  
+            {  
+                "title":"SDDE-480 good-video",
+                "keyword":"good",
+                "channel":"11",
+                "duration":112.8,
+                "framerate":23.976,
+                "hd":false,
+                "addtime":1491552611,
+                "viewnumber":0,
+                "likes":0,
+                "dislikes":0,
+                "video_url":"https://avgle.com/video/38322/sdde-480-good-video",
+                "embedded_url":"https://avgle.com/embed/754cc72675b40296c76e",
+                "preview_url":"https://static.avgle.com/media/videos/tmb/38322/1.jpg",
+                "vid":"38322",
+                "uid":"1"
+            }
+        ]
+    }
+}
+```
+
+This endpoint retrieves the videos with category (channel, CHID) <= 12 that matches the search query which are in criteria, similar to video search.
+
+### HTTP Request
+
+`GET https://api.avgle.com/v1/jav/<query>/<page>`
+
+### URL Parameters
+
+Parameter | Description | Possible values
+--------- | ----------- | ---------------
+query | Search query | URL escaped non empty string
+page | 0 based pagination | [0, +inf)
+
+
+### Query Parameters
+
+See [above](#list-all-videos).
+
+### Response
+
+See [above](#list-all-videos).
+
+
+
 ## Get video by VID
 
 ```php
