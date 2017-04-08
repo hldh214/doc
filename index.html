@@ -831,6 +831,125 @@ if ($response['success']) {
 
 <p>See <a href="#list-all-videos">above</a>.</p>
 
+<h2 id="search-javs">Search JAVs</h2>
+<pre class="highlight php tab-php"><code>$AVGLE_SEARCH_JAV_API_URL = 'https://api.avgle.com/v1/jav/';
+$query = 'sdde-480';
+$page = 0;
+$limit = '?limit=2';
+$response = json_decode(file_get_contents($url . urlencode($query). '/' . $page . $limit), true);
+var_dump($response);
+if ($response['success']) {
+    $videos = $response['response']['videos'];
+    doSomethingWith($videos);
+}
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">urllib.request</span>
+<span class="kn">import</span> <span class="nn">urllib.parse</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="n">AVGLE_SEARCH_JAV_API_URL</span> <span class="o">=</span> <span class="s">'https://api.avgle.com/v1/jav/{}/{}?limit={}'</span>
+<span class="n">query</span> <span class="o">=</span> <span class="s">'sdde-480'</span>
+<span class="n">page</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">limit</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="nb">open</span><span class="p">(</span><span class="n">url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">quote_plus</span><span class="p">(</span><span class="n">query</span><span class="p">),</span> <span class="n">page</span><span class="p">,</span> <span class="n">limit</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">response</span><span class="p">[</span><span class="s">'success'</span><span class="p">]:</span>
+    <span class="n">videos</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="s">'response'</span><span class="p">][</span><span class="s">'videos'</span><span class="p">]</span>
+    <span class="n">do_something_with</span><span class="p">(</span><span class="n">videos</span><span class="p">)</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// node.js</span>
+<span class="kr">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'request'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">AVGLE_SEARCH_JAV_API_URL</span> <span class="o">=</span> <span class="s1">'https://api.avgle.com/v1/jav/'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">query</span> <span class="o">=</span> <span class="s1">'sdde-480'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">limit</span> <span class="o">=</span> <span class="s1">'?limit=2'</span><span class="p">;</span>
+<span class="nx">request</span><span class="p">(</span><span class="nx">AVGLE_SEARCH_JAV_API_URL</span> <span class="o">+</span> <span class="nb">encodeURIComponent</span><span class="p">(</span><span class="nx">query</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'/'</span> <span class="o">+</span> <span class="nx">page</span> <span class="o">+</span> <span class="nx">limit</span><span class="p">,</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">response</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">body</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">videos</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">response</span><span class="p">.</span><span class="nx">videos</span><span class="p">;</span>
+        <span class="nx">doSomethingWith</span><span class="p">(</span><span class="nx">videos</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="c1">// jQuery</span>
+<span class="kd">var</span> <span class="nx">AVGLE_SEARCH_JAV_API_URL</span> <span class="o">=</span> <span class="s1">'https://api.avgle.com/v1/jav'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">query</span> <span class="o">=</span> <span class="s1">'sdde-480'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">limit</span> <span class="o">=</span> <span class="s1">'?limit=2'</span><span class="p">;</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">(</span><span class="nx">AVGLE_SEARCH_JAV_API_URL</span> <span class="o">+</span> <span class="nb">encodeURIComponent</span><span class="p">(</span><span class="nx">query</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'/'</span> <span class="o">+</span> <span class="nx">page</span> <span class="o">+</span> <span class="nx">limit</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">videos</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">response</span><span class="p">.</span><span class="nx">videos</span><span class="p">;</span>
+        <span class="nx">doSomethingWith</span><span class="p">(</span><span class="nx">videos</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">})</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">  
+    </span><span class="s2">"success"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"response"</span><span class="p">:{</span><span class="w">  
+        </span><span class="s2">"has_more"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"total_videos"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"current_offset"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"limit"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"videos"</span><span class="p">:[</span><span class="w">  
+            </span><span class="p">{</span><span class="w">  
+                </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">"SDDE-480 good-video"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"keyword"</span><span class="p">:</span><span class="s2">"good"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"channel"</span><span class="p">:</span><span class="s2">"11"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"duration"</span><span class="p">:</span><span class="mf">112.8</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"framerate"</span><span class="p">:</span><span class="mf">23.976</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"hd"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"addtime"</span><span class="p">:</span><span class="mi">1491552611</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"viewnumber"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"likes"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"dislikes"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/video/38322/sdde-480-good-video"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"embedded_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/embed/754cc72675b40296c76e"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"preview_url"</span><span class="p">:</span><span class="s2">"https://static.avgle.com/media/videos/tmb/38322/1.jpg"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"vid"</span><span class="p">:</span><span class="s2">"38322"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="s2">"1"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves the videos with category (channel, CHID) &lt;= 12 that matches the search query which are in criteria, similar to video search.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://api.avgle.com/v1/jav/&lt;query&gt;/&lt;page&gt;</code></p>
+
+<h3 id="url-parameters">URL Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Possible values</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>query</td>
+<td>Search query</td>
+<td>URL escaped non empty string</td>
+</tr>
+<tr>
+<td>page</td>
+<td>0 based pagination</td>
+<td>[0, +inf)</td>
+</tr>
+</tbody></table>
+
+<h3 id="query-parameters">Query Parameters</h3>
+
+<p>See <a href="#list-all-videos">above</a>.</p>
+
+<h3 id="response">Response</h3>
+
+<p>See <a href="#list-all-videos">above</a>.</p>
+
 <h2 id="get-video-by-vid">Get video by VID</h2>
 <pre class="highlight php tab-php"><code>$AVGLE_GET_VIDEO_API_URL = 'https://api.avgle.com/v1/video/';
 $vid = '38329';
