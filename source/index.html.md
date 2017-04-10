@@ -399,7 +399,7 @@ video > embedded_url | The URL showing an embedded player of the video.
 
 ```php
 $AVGLE_SEARCH_VIDEOS_API_URL = 'https://api.avgle.com/v1/search/';
-$query = 'happy';
+$query = '三上';
 $page = 0;
 $limit = '?limit=2';
 $response = json_decode(file_get_contents($url . urlencode($query). '/' . $page . $limit), true);
@@ -415,7 +415,7 @@ import urllib.request
 import urllib.parse
 import json
 AVGLE_SEARCH_VIDEOS_API_URL = 'https://api.avgle.com/v1/search/{}/{}?limit={}'
-query = 'happy'
+query = '三上'
 page = 0
 limit = 2
 response = json.loads(urllib.request.open(url.format(urllib.parse.quote_plus(query), page, limit)).read().decode())
@@ -429,7 +429,7 @@ if response['success']:
 // node.js
 const request = require('request');
 const AVGLE_SEARCH_VIDEOS_API_URL = 'https://api.avgle.com/v1/search/';
-var query = 'happy';
+var query = '三上';
 var page = 0;
 var limit = '?limit=2';
 request(AVGLE_SEARCH_VIDEOS_API_URL + encodeURIComponent(query) + '/' + page + limit, (error, response, body) => {
@@ -444,7 +444,7 @@ request(AVGLE_SEARCH_VIDEOS_API_URL + encodeURIComponent(query) + '/' + page + l
 
 // jQuery
 var AVGLE_SEARCH_VIDEOS_API_URL = 'https://api.avgle.com/v1/search';
-var query = 'happy';
+var query = '三上';
 var page = 0;
 var limit = '?limit=2';
 $.getJSON(AVGLE_SEARCH_VIDEOS_API_URL + encodeURIComponent(query) + '/' + page + limit, function (response) {
@@ -463,43 +463,43 @@ $.getJSON(AVGLE_SEARCH_VIDEOS_API_URL + encodeURIComponent(query) + '/' + page +
     "success":true,
     "response":{  
         "has_more":true,
-        "total_videos":32,
+        "total_videos":24,
         "current_offset":0,
         "limit":2,
         "videos":[  
             {  
-                "vid":"37807",
-                "uid":"1",
-                "title":"Thank you all for following! I finally reached the 100.000!! So here is a video of myself as a thank you!! Happy early holidays~~~~ My friend at Jporns has finally reached 100k followers, so she posted a video of herself this time",
-                "keyword":"whhdokemme",
-                "channel":"16",
-                "duration":24.54,
-                "framerate":24,
+                "title":"ハミチンを指摘してきた母に「溜まってんのかよw」って軽い感じで言ったらまさかの本気！欲求不満だったのか、発散する様に俺を貪り犯し、弄んできた母にメロメロの俺 YSN-464",
+                "keyword":"三島奈津子 坂本すみれ 三上絵理香 神山なな 古川祥子 二階堂ゆり",
+                "channel":"2",
+                "duration":7353.22,
+                "framerate":29.97,
                 "hd":false,
-                "addtime":1491374572,
-                "viewnumber":15,
-                "likes":0,
+                "addtime":1491018188,
+                "viewnumber":976,
+                "likes":1,
                 "dislikes":0,
-                "video_url":"https://avgle.com/video/37807/thank-you-all-for-following-i-finally-reached-the-100-000-so-here-is-a-video-of-myself-as-a-thank-you-happy-early-holidays-my-friend-at-jporns-has-finally-reached-100k-followers-so-she-posted-a-video-of-herself-this-time",
-                "embedded_url":"https://avgle.com/embed/26bd4367d963890a044d",
-                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/37807/3.jpg"
+                "video_url":"https://avgle.com/video/26967/ハミチンを指摘してきた母に-溜まってんのかよw-って軽い感じで言ったらまさかの本気-欲求不満だったのか-発散する様に俺を貪り犯し-弄んできた母にメロメロの俺-ysn-464",
+                "embedded_url":"https://avgle.com/embed/d1fc027d01a09ed569d7",
+                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/26967/1.jpg",
+                "vid":"26967",
+                "uid":"1"
             },
             {  
-                "vid":"35508",
-                "uid":"1",
-                "title":": ??Happy 1yr Anniversary?? ?NyRieux & Bella? ✨***downloading & posting this video on other sites is prohibited***✨ Omg I’m in love Dammmmmn that’s sexy Congrats baby.. U r the best on tumbler..keep on posting This is an old video sweetie pies?",
-                "keyword":"jason5581",
-                "channel":"13",
-                "duration":168.68,
-                "framerate":30,
+                "title":"JRZD-719 初撮り人妻ドキュメント 三上千夏",
+                "keyword":"三上千夏",
+                "channel":"10",
+                "duration":7616.67,
+                "framerate":29.97,
                 "hd":false,
-                "addtime":1491201161,
-                "viewnumber":79,
+                "addtime":1491009976,
+                "viewnumber":1299,
                 "likes":0,
-                "dislikes":1,
-                "video_url":"https://avgle.com/video/35508/happy-1yr-anniversary-nyrieux-bella-downloading-posting-this-video-on-other-sites-is-prohibited-omg-i-m-in-love-dammmmmn-that-s-sexy-congrats-baby-u-r-the-best-on-tumbler-keep-on-posting-this-is-an-old-video-sweetie-pies",
-                "embedded_url":"https://avgle.com/embed/d0bb976953ad54c934f0",
-                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/35508/1.jpg"
+                "dislikes":0,
+                "video_url":"https://avgle.com/video/26953/jrzd-719-初撮り人妻ドキュメント-三上千夏",
+                "embedded_url":"https://avgle.com/embed/a4e361b606228f0c8636",
+                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/26953/1.jpg",
+                "vid":"26953",
+                "uid":"1"
             }
         ]
     }
@@ -650,7 +650,7 @@ See [above](#list-all-videos).
 
 ```php
 $AVGLE_GET_VIDEO_API_URL = 'https://api.avgle.com/v1/video/';
-$vid = '38329';
+$vid = '5824';
 $response = json_decode(file_get_contents($url . $vid), true);
 var_dump($response);
 if ($response['success']) {
@@ -663,7 +663,7 @@ if ($response['success']) {
 import urllib.request
 import json
 AVGLE_GET_VIDEO_API_URL = 'https://api.avgle.com/v1/video/{}'
-vid = '38329'
+vid = '5824'
 response = json.loads(urllib.request.open(url.format(vid)).read().decode())
 print(response)
 if response['success']:
@@ -675,7 +675,7 @@ if response['success']:
 // node.js
 const request = require('request');
 const AVGLE_GET_VIDEO_API_URL = 'https://api.avgle.com/v1/video/';
-var vid = '38329';
+var vid = '5824';
 request(AVGLE_GET_VIDEO_API_URL + vid, (error, response, body) => {
     if (err) return console.log(err);
     var response = JSON.parse(body);
@@ -688,7 +688,7 @@ request(AVGLE_GET_VIDEO_API_URL + vid, (error, response, body) => {
 
 // jQuery
 var AVGLE_GET_VIDEO_API_URL = 'https://api.avgle.com/v1/video';
-var vid = '38329';
+var vid = '5824';
 $.getJSON(AVGLE_GET_VIDEO_API_URL + vid, function (response) {
     console.log(response);
     if (response.success) {
@@ -705,21 +705,21 @@ $.getJSON(AVGLE_GET_VIDEO_API_URL + vid, function (response) {
     "success":true,
     "response":{  
         "video":{  
-            "vid":"38329",
+            "vid":"5824",
             "uid":"1",
-            "title":"簡小米(蘇X靜) 性愛影片 5",
-            "keyword":"蘇怡靜",
-            "channel":"17",
-            "duration":112.8,
-            "framerate":23.976,
-            "hd":false,
-            "addtime":1491552611,
-            "viewnumber":952,
-            "likes":2,
-            "dislikes":1,
-            "video_url":"https://avgle.com/video/38329/簡小米-蘇x靜-性愛影片-5",
-            "embedded_url":"https://avgle.com/embed/754cc72672b40296c76e",
-            "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/38329/1.jpg"
+            "title":"【にしくん、初SEX収録】ロリっこ痴女とえっち遊び 椎名そら＆宮崎あや SDDE-480",
+            "keyword":"椎名そら 宮崎あや",
+            "channel":"1",
+            "duration":6074,
+            "framerate":30,
+            "hd":true,
+            "addtime":1488762607,
+            "viewnumber":38590,
+            "likes":7,
+            "dislikes":2,
+            "video_url":"https://avgle.com/video/5824/にしくん-初sex収録-ロリっこ痴女とえっち遊び-椎名そら-宮崎あや-sdde-480",
+            "embedded_url":"https://avgle.com/embed/7b35e6eb462bbf80915c",
+            "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/5824/1.jpg"
         }
     }
 }
@@ -730,7 +730,7 @@ $.getJSON(AVGLE_GET_VIDEO_API_URL + vid, function (response) {
 {  
     "success":false,
     "response":{  
-        "error_message":"Video of VID 38329 not found."
+        "error_message":"Video of VID 5824 not found."
     }
 }
 ```
