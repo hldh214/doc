@@ -697,7 +697,7 @@ if ($response['success']) {
 
 <h2 id="search-videos">Search videos</h2>
 <pre class="highlight php tab-php"><code>$AVGLE_SEARCH_VIDEOS_API_URL = 'https://api.avgle.com/v1/search/';
-$query = '三上';
+$query = '三上悠亜';
 $page = 0;
 $limit = '?limit=2';
 $response = json_decode(file_get_contents($url . urlencode($query). '/' . $page . $limit), true);
@@ -710,7 +710,7 @@ if ($response['success']) {
 <span class="kn">import</span> <span class="nn">urllib.parse</span>
 <span class="kn">import</span> <span class="nn">json</span>
 <span class="n">AVGLE_SEARCH_VIDEOS_API_URL</span> <span class="o">=</span> <span class="s">'https://api.avgle.com/v1/search/{}/{}?limit={}'</span>
-<span class="n">query</span> <span class="o">=</span> <span class="s">'三上'</span>
+<span class="n">query</span> <span class="o">=</span> <span class="s">'三上悠亜'</span>
 <span class="n">page</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">limit</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="nb">open</span><span class="p">(</span><span class="n">url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">quote_plus</span><span class="p">(</span><span class="n">query</span><span class="p">),</span> <span class="n">page</span><span class="p">,</span> <span class="n">limit</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
@@ -721,7 +721,7 @@ if ($response['success']) {
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// node.js</span>
 <span class="kr">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'request'</span><span class="p">);</span>
 <span class="kr">const</span> <span class="nx">AVGLE_SEARCH_VIDEOS_API_URL</span> <span class="o">=</span> <span class="s1">'https://api.avgle.com/v1/search/'</span><span class="p">;</span>
-<span class="kd">var</span> <span class="nx">query</span> <span class="o">=</span> <span class="s1">'三上'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">query</span> <span class="o">=</span> <span class="s1">'三上悠亜'</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">limit</span> <span class="o">=</span> <span class="s1">'?limit=2'</span><span class="p">;</span>
 <span class="nx">request</span><span class="p">(</span><span class="nx">AVGLE_SEARCH_VIDEOS_API_URL</span> <span class="o">+</span> <span class="nb">encodeURIComponent</span><span class="p">(</span><span class="nx">query</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'/'</span> <span class="o">+</span> <span class="nx">page</span> <span class="o">+</span> <span class="nx">limit</span><span class="p">,</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">response</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
@@ -736,7 +736,7 @@ if ($response['success']) {
 
 <span class="c1">// jQuery</span>
 <span class="kd">var</span> <span class="nx">AVGLE_SEARCH_VIDEOS_API_URL</span> <span class="o">=</span> <span class="s1">'https://api.avgle.com/v1/search'</span><span class="p">;</span>
-<span class="kd">var</span> <span class="nx">query</span> <span class="o">=</span> <span class="s1">'三上'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">query</span> <span class="o">=</span> <span class="s1">'三上悠亜'</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">limit</span> <span class="o">=</span> <span class="s1">'?limit=2'</span><span class="p">;</span>
 <span class="nx">$</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">(</span><span class="nx">AVGLE_SEARCH_VIDEOS_API_URL</span> <span class="o">+</span> <span class="nb">encodeURIComponent</span><span class="p">(</span><span class="nx">query</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'/'</span> <span class="o">+</span> <span class="nx">page</span> <span class="o">+</span> <span class="nx">limit</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
@@ -754,43 +754,43 @@ if ($response['success']) {
     </span><span class="s2">"success"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
     </span><span class="s2">"response"</span><span class="p">:{</span><span class="w">  
         </span><span class="s2">"has_more"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"total_videos"</span><span class="p">:</span><span class="mi">24</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"total_videos"</span><span class="p">:</span><span class="mi">17</span><span class="p">,</span><span class="w">
         </span><span class="s2">"current_offset"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
         </span><span class="s2">"limit"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
         </span><span class="s2">"videos"</span><span class="p">:[</span><span class="w">  
             </span><span class="p">{</span><span class="w">  
-                </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">"ハミチンを指摘してきた母に「溜まってんのかよw」って軽い感じで言ったらまさかの本気！欲求不満だったのか、発散する様に俺を貪り犯し、弄んできた母にメロメロの俺 YSN-464"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"keyword"</span><span class="p">:</span><span class="s2">"三島奈津子 坂本すみれ 三上絵理香 神山なな 古川祥子 二階堂ゆり"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"channel"</span><span class="p">:</span><span class="s2">"2"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"duration"</span><span class="p">:</span><span class="mf">7353.22</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"framerate"</span><span class="p">:</span><span class="mf">29.97</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"hd"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"addtime"</span><span class="p">:</span><span class="mi">1491018188</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"viewnumber"</span><span class="p">:</span><span class="mi">976</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"likes"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"dislikes"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"video_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/video/26967/ハミチンを指摘してきた母に-溜まってんのかよw-って軽い感じで言ったらまさかの本気-欲求不満だったのか-発散する様に俺を貪り犯し-弄んできた母にメロメロの俺-ysn-464"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"embedded_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/embed/d1fc027d01a09ed569d7"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"preview_url"</span><span class="p">:</span><span class="s2">"https://static.qooqlevideo.com/media/videos/tmb/26967/1.jpg"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"vid"</span><span class="p">:</span><span class="s2">"26967"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"uid"</span><span class="p">:</span><span class="s2">"1"</span><span class="w">
+                </span><span class="s2">"vid"</span><span class="p">:</span><span class="s2">"19944"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">"三上悠亜 快感スプラッシュ！はじめての気持ち良すぎる潮吹き TEK-081"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"keyword"</span><span class="p">:</span><span class="s2">"三上悠亜 三上悠亞"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"channel"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"duration"</span><span class="p">:</span><span class="mf">10268.98</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"framerate"</span><span class="p">:</span><span class="mf">28.71</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"hd"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"addtime"</span><span class="p">:</span><span class="mi">1490539669</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"viewnumber"</span><span class="p">:</span><span class="mi">17945</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"likes"</span><span class="p">:</span><span class="mi">12</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"dislikes"</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/video/19944/三上悠亜-快感スプラッシュ-はじめての気持ち良すぎる潮吹き-tek-081"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"embedded_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/embed/e3d0bde3b1c8b5d10362"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"preview_url"</span><span class="p">:</span><span class="s2">"https://static.qooqlevideo.com/media/videos/tmb/19944/1.jpg"</span><span class="w">
             </span><span class="p">},</span><span class="w">
             </span><span class="p">{</span><span class="w">  
-                </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">"JRZD-719 初撮り人妻ドキュメント 三上千夏"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"keyword"</span><span class="p">:</span><span class="s2">"三上千夏"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"channel"</span><span class="p">:</span><span class="s2">"10"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"duration"</span><span class="p">:</span><span class="mf">7616.67</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"vid"</span><span class="p">:</span><span class="s2">"19824"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">"三上悠亜 Princess Peach TEK-067"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"keyword"</span><span class="p">:</span><span class="s2">"三上悠亜 三上悠亞"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"channel"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"duration"</span><span class="p">:</span><span class="mf">10579.71</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"framerate"</span><span class="p">:</span><span class="mf">29.97</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"hd"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"addtime"</span><span class="p">:</span><span class="mi">1491009976</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"viewnumber"</span><span class="p">:</span><span class="mi">1299</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"likes"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"dislikes"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"video_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/video/26953/jrzd-719-初撮り人妻ドキュメント-三上千夏"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"embedded_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/embed/a4e361b606228f0c8636"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"preview_url"</span><span class="p">:</span><span class="s2">"https://static.qooqlevideo.com/media/videos/tmb/26953/1.jpg"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"vid"</span><span class="p">:</span><span class="s2">"26953"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"uid"</span><span class="p">:</span><span class="s2">"1"</span><span class="w">
+                </span><span class="s2">"hd"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"addtime"</span><span class="p">:</span><span class="mi">1490538334</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"viewnumber"</span><span class="p">:</span><span class="mi">11040</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"likes"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"dislikes"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/video/19824/三上悠亜-princess-peach-tek-067"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"embedded_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/embed/7f8a1da5fc490022a9f5"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"preview_url"</span><span class="p">:</span><span class="s2">"https://static.qooqlevideo.com/media/videos/tmb/19824/1.jpg"</span><span class="w">
             </span><span class="p">}</span><span class="w">
         </span><span class="p">]</span><span class="w">
     </span><span class="p">}</span><span class="w">
