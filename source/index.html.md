@@ -399,7 +399,7 @@ video > embedded_url | The URL showing an embedded player of the video.
 
 ```php
 $AVGLE_SEARCH_VIDEOS_API_URL = 'https://api.avgle.com/v1/search/';
-$query = '三上';
+$query = '三上悠亜';
 $page = 0;
 $limit = '?limit=2';
 $response = json_decode(file_get_contents($url . urlencode($query). '/' . $page . $limit), true);
@@ -415,7 +415,7 @@ import urllib.request
 import urllib.parse
 import json
 AVGLE_SEARCH_VIDEOS_API_URL = 'https://api.avgle.com/v1/search/{}/{}?limit={}'
-query = '三上'
+query = '三上悠亜'
 page = 0
 limit = 2
 response = json.loads(urllib.request.open(url.format(urllib.parse.quote_plus(query), page, limit)).read().decode())
@@ -429,7 +429,7 @@ if response['success']:
 // node.js
 const request = require('request');
 const AVGLE_SEARCH_VIDEOS_API_URL = 'https://api.avgle.com/v1/search/';
-var query = '三上';
+var query = '三上悠亜';
 var page = 0;
 var limit = '?limit=2';
 request(AVGLE_SEARCH_VIDEOS_API_URL + encodeURIComponent(query) + '/' + page + limit, (error, response, body) => {
@@ -444,7 +444,7 @@ request(AVGLE_SEARCH_VIDEOS_API_URL + encodeURIComponent(query) + '/' + page + l
 
 // jQuery
 var AVGLE_SEARCH_VIDEOS_API_URL = 'https://api.avgle.com/v1/search';
-var query = '三上';
+var query = '三上悠亜';
 var page = 0;
 var limit = '?limit=2';
 $.getJSON(AVGLE_SEARCH_VIDEOS_API_URL + encodeURIComponent(query) + '/' + page + limit, function (response) {
@@ -463,43 +463,43 @@ $.getJSON(AVGLE_SEARCH_VIDEOS_API_URL + encodeURIComponent(query) + '/' + page +
     "success":true,
     "response":{  
         "has_more":true,
-        "total_videos":24,
+        "total_videos":17,
         "current_offset":0,
         "limit":2,
         "videos":[  
             {  
-                "title":"ハミチンを指摘してきた母に「溜まってんのかよw」って軽い感じで言ったらまさかの本気！欲求不満だったのか、発散する様に俺を貪り犯し、弄んできた母にメロメロの俺 YSN-464",
-                "keyword":"三島奈津子 坂本すみれ 三上絵理香 神山なな 古川祥子 二階堂ゆり",
-                "channel":"2",
-                "duration":7353.22,
-                "framerate":29.97,
-                "hd":false,
-                "addtime":1491018188,
-                "viewnumber":976,
-                "likes":1,
-                "dislikes":0,
-                "video_url":"https://avgle.com/video/26967/ハミチンを指摘してきた母に-溜まってんのかよw-って軽い感じで言ったらまさかの本気-欲求不満だったのか-発散する様に俺を貪り犯し-弄んできた母にメロメロの俺-ysn-464",
-                "embedded_url":"https://avgle.com/embed/d1fc027d01a09ed569d7",
-                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/26967/1.jpg",
-                "vid":"26967",
-                "uid":"1"
+                "vid":"19944",
+                "uid":"1",
+                "title":"三上悠亜 快感スプラッシュ！はじめての気持ち良すぎる潮吹き TEK-081",
+                "keyword":"三上悠亜 三上悠亞",
+                "channel":"1",
+                "duration":10268.98,
+                "framerate":28.71,
+                "hd":true,
+                "addtime":1490539669,
+                "viewnumber":17945,
+                "likes":12,
+                "dislikes":5,
+                "video_url":"https://avgle.com/video/19944/三上悠亜-快感スプラッシュ-はじめての気持ち良すぎる潮吹き-tek-081",
+                "embedded_url":"https://avgle.com/embed/e3d0bde3b1c8b5d10362",
+                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/19944/1.jpg"
             },
             {  
-                "title":"JRZD-719 初撮り人妻ドキュメント 三上千夏",
-                "keyword":"三上千夏",
-                "channel":"10",
-                "duration":7616.67,
+                "vid":"19824",
+                "uid":"1",
+                "title":"三上悠亜 Princess Peach TEK-067",
+                "keyword":"三上悠亜 三上悠亞",
+                "channel":"1",
+                "duration":10579.71,
                 "framerate":29.97,
-                "hd":false,
-                "addtime":1491009976,
-                "viewnumber":1299,
-                "likes":0,
-                "dislikes":0,
-                "video_url":"https://avgle.com/video/26953/jrzd-719-初撮り人妻ドキュメント-三上千夏",
-                "embedded_url":"https://avgle.com/embed/a4e361b606228f0c8636",
-                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/26953/1.jpg",
-                "vid":"26953",
-                "uid":"1"
+                "hd":true,
+                "addtime":1490538334,
+                "viewnumber":11040,
+                "likes":2,
+                "dislikes":1,
+                "video_url":"https://avgle.com/video/19824/三上悠亜-princess-peach-tek-067",
+                "embedded_url":"https://avgle.com/embed/7f8a1da5fc490022a9f5",
+                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/19824/1.jpg"
             }
         ]
     }
