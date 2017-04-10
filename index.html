@@ -697,7 +697,7 @@ if ($response['success']) {
 
 <h2 id="search-videos">Search videos</h2>
 <pre class="highlight php tab-php"><code>$AVGLE_SEARCH_VIDEOS_API_URL = 'https://api.avgle.com/v1/search/';
-$query = 'happy';
+$query = '三上';
 $page = 0;
 $limit = '?limit=2';
 $response = json_decode(file_get_contents($url . urlencode($query). '/' . $page . $limit), true);
@@ -710,7 +710,7 @@ if ($response['success']) {
 <span class="kn">import</span> <span class="nn">urllib.parse</span>
 <span class="kn">import</span> <span class="nn">json</span>
 <span class="n">AVGLE_SEARCH_VIDEOS_API_URL</span> <span class="o">=</span> <span class="s">'https://api.avgle.com/v1/search/{}/{}?limit={}'</span>
-<span class="n">query</span> <span class="o">=</span> <span class="s">'happy'</span>
+<span class="n">query</span> <span class="o">=</span> <span class="s">'三上'</span>
 <span class="n">page</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">limit</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="nb">open</span><span class="p">(</span><span class="n">url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">quote_plus</span><span class="p">(</span><span class="n">query</span><span class="p">),</span> <span class="n">page</span><span class="p">,</span> <span class="n">limit</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
@@ -721,7 +721,7 @@ if ($response['success']) {
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// node.js</span>
 <span class="kr">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'request'</span><span class="p">);</span>
 <span class="kr">const</span> <span class="nx">AVGLE_SEARCH_VIDEOS_API_URL</span> <span class="o">=</span> <span class="s1">'https://api.avgle.com/v1/search/'</span><span class="p">;</span>
-<span class="kd">var</span> <span class="nx">query</span> <span class="o">=</span> <span class="s1">'happy'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">query</span> <span class="o">=</span> <span class="s1">'三上'</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">limit</span> <span class="o">=</span> <span class="s1">'?limit=2'</span><span class="p">;</span>
 <span class="nx">request</span><span class="p">(</span><span class="nx">AVGLE_SEARCH_VIDEOS_API_URL</span> <span class="o">+</span> <span class="nb">encodeURIComponent</span><span class="p">(</span><span class="nx">query</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'/'</span> <span class="o">+</span> <span class="nx">page</span> <span class="o">+</span> <span class="nx">limit</span><span class="p">,</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">response</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
@@ -736,7 +736,7 @@ if ($response['success']) {
 
 <span class="c1">// jQuery</span>
 <span class="kd">var</span> <span class="nx">AVGLE_SEARCH_VIDEOS_API_URL</span> <span class="o">=</span> <span class="s1">'https://api.avgle.com/v1/search'</span><span class="p">;</span>
-<span class="kd">var</span> <span class="nx">query</span> <span class="o">=</span> <span class="s1">'happy'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">query</span> <span class="o">=</span> <span class="s1">'三上'</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">limit</span> <span class="o">=</span> <span class="s1">'?limit=2'</span><span class="p">;</span>
 <span class="nx">$</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">(</span><span class="nx">AVGLE_SEARCH_VIDEOS_API_URL</span> <span class="o">+</span> <span class="nb">encodeURIComponent</span><span class="p">(</span><span class="nx">query</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'/'</span> <span class="o">+</span> <span class="nx">page</span> <span class="o">+</span> <span class="nx">limit</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
@@ -754,43 +754,43 @@ if ($response['success']) {
     </span><span class="s2">"success"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
     </span><span class="s2">"response"</span><span class="p">:{</span><span class="w">  
         </span><span class="s2">"has_more"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"total_videos"</span><span class="p">:</span><span class="mi">32</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"total_videos"</span><span class="p">:</span><span class="mi">24</span><span class="p">,</span><span class="w">
         </span><span class="s2">"current_offset"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
         </span><span class="s2">"limit"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
         </span><span class="s2">"videos"</span><span class="p">:[</span><span class="w">  
             </span><span class="p">{</span><span class="w">  
-                </span><span class="s2">"vid"</span><span class="p">:</span><span class="s2">"37807"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"uid"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">"Thank you all for following! I finally reached the 100.000!! So here is a video of myself as a thank you!! Happy early holidays~~~~ My friend at Jporns has finally reached 100k followers, so she posted a video of herself this time"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"keyword"</span><span class="p">:</span><span class="s2">"whhdokemme"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"channel"</span><span class="p">:</span><span class="s2">"16"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"duration"</span><span class="p">:</span><span class="mf">24.54</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"framerate"</span><span class="p">:</span><span class="mi">24</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">"ハミチンを指摘してきた母に「溜まってんのかよw」って軽い感じで言ったらまさかの本気！欲求不満だったのか、発散する様に俺を貪り犯し、弄んできた母にメロメロの俺 YSN-464"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"keyword"</span><span class="p">:</span><span class="s2">"三島奈津子 坂本すみれ 三上絵理香 神山なな 古川祥子 二階堂ゆり"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"channel"</span><span class="p">:</span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"duration"</span><span class="p">:</span><span class="mf">7353.22</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"framerate"</span><span class="p">:</span><span class="mf">29.97</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"hd"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"addtime"</span><span class="p">:</span><span class="mi">1491374572</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"viewnumber"</span><span class="p">:</span><span class="mi">15</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"likes"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"addtime"</span><span class="p">:</span><span class="mi">1491018188</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"viewnumber"</span><span class="p">:</span><span class="mi">976</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"likes"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"dislikes"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"video_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/video/37807/thank-you-all-for-following-i-finally-reached-the-100-000-so-here-is-a-video-of-myself-as-a-thank-you-happy-early-holidays-my-friend-at-jporns-has-finally-reached-100k-followers-so-she-posted-a-video-of-herself-this-time"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"embedded_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/embed/26bd4367d963890a044d"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"preview_url"</span><span class="p">:</span><span class="s2">"https://static.qooqlevideo.com/media/videos/tmb/37807/3.jpg"</span><span class="w">
+                </span><span class="s2">"video_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/video/26967/ハミチンを指摘してきた母に-溜まってんのかよw-って軽い感じで言ったらまさかの本気-欲求不満だったのか-発散する様に俺を貪り犯し-弄んできた母にメロメロの俺-ysn-464"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"embedded_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/embed/d1fc027d01a09ed569d7"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"preview_url"</span><span class="p">:</span><span class="s2">"https://static.qooqlevideo.com/media/videos/tmb/26967/1.jpg"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"vid"</span><span class="p">:</span><span class="s2">"26967"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="s2">"1"</span><span class="w">
             </span><span class="p">},</span><span class="w">
             </span><span class="p">{</span><span class="w">  
-                </span><span class="s2">"vid"</span><span class="p">:</span><span class="s2">"35508"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"uid"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">": ??Happy 1yr Anniversary?? ?NyRieux &amp; Bella? ✨***downloading &amp; posting this video on other sites is prohibited***✨ Omg I’m in love Dammmmmn that’s sexy Congrats baby.. U r the best on tumbler..keep on posting This is an old video sweetie pies?"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"keyword"</span><span class="p">:</span><span class="s2">"jason5581"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"channel"</span><span class="p">:</span><span class="s2">"13"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"duration"</span><span class="p">:</span><span class="mf">168.68</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"framerate"</span><span class="p">:</span><span class="mi">30</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">"JRZD-719 初撮り人妻ドキュメント 三上千夏"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"keyword"</span><span class="p">:</span><span class="s2">"三上千夏"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"channel"</span><span class="p">:</span><span class="s2">"10"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"duration"</span><span class="p">:</span><span class="mf">7616.67</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"framerate"</span><span class="p">:</span><span class="mf">29.97</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"hd"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"addtime"</span><span class="p">:</span><span class="mi">1491201161</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"viewnumber"</span><span class="p">:</span><span class="mi">79</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"addtime"</span><span class="p">:</span><span class="mi">1491009976</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"viewnumber"</span><span class="p">:</span><span class="mi">1299</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"likes"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"dislikes"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"video_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/video/35508/happy-1yr-anniversary-nyrieux-bella-downloading-posting-this-video-on-other-sites-is-prohibited-omg-i-m-in-love-dammmmmn-that-s-sexy-congrats-baby-u-r-the-best-on-tumbler-keep-on-posting-this-is-an-old-video-sweetie-pies"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"embedded_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/embed/d0bb976953ad54c934f0"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"preview_url"</span><span class="p">:</span><span class="s2">"https://static.qooqlevideo.com/media/videos/tmb/35508/1.jpg"</span><span class="w">
+                </span><span class="s2">"dislikes"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"video_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/video/26953/jrzd-719-初撮り人妻ドキュメント-三上千夏"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"embedded_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/embed/a4e361b606228f0c8636"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"preview_url"</span><span class="p">:</span><span class="s2">"https://static.qooqlevideo.com/media/videos/tmb/26953/1.jpg"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"vid"</span><span class="p">:</span><span class="s2">"26953"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"uid"</span><span class="p">:</span><span class="s2">"1"</span><span class="w">
             </span><span class="p">}</span><span class="w">
         </span><span class="p">]</span><span class="w">
     </span><span class="p">}</span><span class="w">
@@ -952,7 +952,7 @@ if ($response['success']) {
 
 <h2 id="get-video-by-vid">Get video by VID</h2>
 <pre class="highlight php tab-php"><code>$AVGLE_GET_VIDEO_API_URL = 'https://api.avgle.com/v1/video/';
-$vid = '38329';
+$vid = '5824';
 $response = json_decode(file_get_contents($url . $vid), true);
 var_dump($response);
 if ($response['success']) {
@@ -962,7 +962,7 @@ if ($response['success']) {
 </code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">urllib.request</span>
 <span class="kn">import</span> <span class="nn">json</span>
 <span class="n">AVGLE_GET_VIDEO_API_URL</span> <span class="o">=</span> <span class="s">'https://api.avgle.com/v1/video/{}'</span>
-<span class="n">vid</span> <span class="o">=</span> <span class="s">'38329'</span>
+<span class="n">vid</span> <span class="o">=</span> <span class="s">'5824'</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="nb">open</span><span class="p">(</span><span class="n">url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">vid</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
 <span class="k">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">response</span><span class="p">[</span><span class="s">'success'</span><span class="p">]:</span>
@@ -971,7 +971,7 @@ if ($response['success']) {
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// node.js</span>
 <span class="kr">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'request'</span><span class="p">);</span>
 <span class="kr">const</span> <span class="nx">AVGLE_GET_VIDEO_API_URL</span> <span class="o">=</span> <span class="s1">'https://api.avgle.com/v1/video/'</span><span class="p">;</span>
-<span class="kd">var</span> <span class="nx">vid</span> <span class="o">=</span> <span class="s1">'38329'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">vid</span> <span class="o">=</span> <span class="s1">'5824'</span><span class="p">;</span>
 <span class="nx">request</span><span class="p">(</span><span class="nx">AVGLE_GET_VIDEO_API_URL</span> <span class="o">+</span> <span class="nx">vid</span><span class="p">,</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">response</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
     <span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">body</span><span class="p">);</span>
@@ -984,7 +984,7 @@ if ($response['success']) {
 
 <span class="c1">// jQuery</span>
 <span class="kd">var</span> <span class="nx">AVGLE_GET_VIDEO_API_URL</span> <span class="o">=</span> <span class="s1">'https://api.avgle.com/v1/video'</span><span class="p">;</span>
-<span class="kd">var</span> <span class="nx">vid</span> <span class="o">=</span> <span class="s1">'38329'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">vid</span> <span class="o">=</span> <span class="s1">'5824'</span><span class="p">;</span>
 <span class="nx">$</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">(</span><span class="nx">AVGLE_GET_VIDEO_API_URL</span> <span class="o">+</span> <span class="nx">vid</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">);</span>
     <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
@@ -1000,21 +1000,21 @@ if ($response['success']) {
     </span><span class="s2">"success"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
     </span><span class="s2">"response"</span><span class="p">:{</span><span class="w">  
         </span><span class="s2">"video"</span><span class="p">:{</span><span class="w">  
-            </span><span class="s2">"vid"</span><span class="p">:</span><span class="s2">"38329"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"vid"</span><span class="p">:</span><span class="s2">"5824"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"uid"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">"簡小米(蘇X靜) 性愛影片 5"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"keyword"</span><span class="p">:</span><span class="s2">"蘇怡靜"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"channel"</span><span class="p">:</span><span class="s2">"17"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"duration"</span><span class="p">:</span><span class="mf">112.8</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"framerate"</span><span class="p">:</span><span class="mf">23.976</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"hd"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"addtime"</span><span class="p">:</span><span class="mi">1491552611</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"viewnumber"</span><span class="p">:</span><span class="mi">952</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"likes"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"dislikes"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/video/38329/簡小米-蘇x靜-性愛影片-5"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"embedded_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/embed/754cc72672b40296c76e"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"preview_url"</span><span class="p">:</span><span class="s2">"https://static.qooqlevideo.com/media/videos/tmb/38329/1.jpg"</span><span class="w">
+            </span><span class="s2">"title"</span><span class="p">:</span><span class="s2">"【にしくん、初SEX収録】ロリっこ痴女とえっち遊び 椎名そら＆宮崎あや SDDE-480"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"keyword"</span><span class="p">:</span><span class="s2">"椎名そら 宮崎あや"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"channel"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"duration"</span><span class="p">:</span><span class="mi">6074</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"framerate"</span><span class="p">:</span><span class="mi">30</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"hd"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"addtime"</span><span class="p">:</span><span class="mi">1488762607</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"viewnumber"</span><span class="p">:</span><span class="mi">38590</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"likes"</span><span class="p">:</span><span class="mi">7</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"dislikes"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"video_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/video/5824/にしくん-初sex収録-ロリっこ痴女とえっち遊び-椎名そら-宮崎あや-sdde-480"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"embedded_url"</span><span class="p">:</span><span class="s2">"https://avgle.com/embed/7b35e6eb462bbf80915c"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"preview_url"</span><span class="p">:</span><span class="s2">"https://static.qooqlevideo.com/media/videos/tmb/5824/1.jpg"</span><span class="w">
         </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -1025,7 +1025,7 @@ if ($response['success']) {
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">  
     </span><span class="s2">"success"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
     </span><span class="s2">"response"</span><span class="p">:{</span><span class="w">  
-        </span><span class="s2">"error_message"</span><span class="p">:</span><span class="s2">"Video of VID 38329 not found."</span><span class="w">
+        </span><span class="s2">"error_message"</span><span class="p">:</span><span class="s2">"Video of VID 5824 not found."</span><span class="w">
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
