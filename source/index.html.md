@@ -190,7 +190,7 @@ $.getJSON(AVGLE_LIST_COLLECTIONS_API_URL + page + limit, function (response) {
     "success":true,
     "response":{  
         "has_more":true,
-        "total_collections":88,
+        "total_collections":95,
         "current_offset":0,
         "limit":2,
         "collections":[  
@@ -198,19 +198,19 @@ $.getJSON(AVGLE_LIST_COLLECTIONS_API_URL + page + limit, function (response) {
                 "id":"1",
                 "title":"三上悠亜",
                 "keyword":"三上悠亜",
-                "collection_url":"https://avgle.com/c/三上悠亜",
-                "cover_url":"https://avgle.com/media/videos/tmb/19944/1.jpg",
-                "total_views":200000,
-                "video_count":17
+                "cover_url":"https://static.qooqlevideo.com/media/videos/tmb/19944/1.jpg",
+                "total_views":204011,
+                "video_count":17,
+                "collection_url":"https://avgle.com/c/三上悠亜"
             },
             {  
                 "id":"2",
                 "title":"高橋しょう子",
                 "keyword":"高橋しょう子",
-                "collection_url":"https://avgle.com/c/高橋しょう子",
-                "cover_url":"https://avgle.com/media/videos/tmb/3520/1.jpg",
-                "total_views":115927,
-                "video_count":11
+                "cover_url":"https://static.qooqlevideo.com/media/videos/tmb/3520/1.jpg",
+                "total_views":128658,
+                "video_count":11,
+                "collection_url":"https://avgle.com/c/高橋しょう子"
             }
         ]
     }
@@ -316,43 +316,43 @@ $.getJSON(AVGLE_LIST_VIDEOS_API_URL + page + limit, function (response) {
     "success":true,
     "response":{  
         "has_more":true,
-        "total_videos":27352,
+        "total_videos":28261,
         "current_offset":0,
         "limit":2,
         "videos":[  
             {  
-                "title":"happy-video",
-                "keyword":"happy",
-                "channel":"17",
-                "duration":112.8,
-                "framerate":23.976,
-                "hd":false,
-                "addtime":1491552611,
-                "viewnumber":0,
+                "vid":"39271",
+                "uid":"1",
+                "title":"ミニミニ◆つるぺたいもうと 近親中出し 矢澤美々 身長145cm KTDS-958",
+                "keyword":"矢澤美々",
+                "channel":"2",
+                "duration":7063.39,
+                "framerate":29.97,
+                "hd":true,
+                "addtime":1491800115,
+                "viewnumber":50,
                 "likes":0,
                 "dislikes":0,
-                "video_url":"https://avgle.com/video/38329/happy-video",
-                "embedded_url":"https://avgle.com/embed/754cc72672b40296c76e",
-                "preview_url":"https://static.avgle.com/media/videos/tmb/38329/1.jpg",
-                "vid":"38329",
-                "uid":"1"
+                "video_url":"https://avgle.com/video/39271/ミニミニ-つるぺたいもうと-近親中出し-矢澤美々-身長145cm-ktds-958",
+                "embedded_url":"https://avgle.com/embed/8bc32a2e41264b049793",
+                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/39271/1.jpg"
             },
             {  
-                "title":"cool-video",
-                "keyword":"cool",
-                "channel":"17",
-                "duration":209.58,
-                "framerate":23.976,
-                "hd":false,
-                "addtime":1491552558,
-                "viewnumber":0,
+                "vid":"39270",
+                "uid":"1",
+                "title":"SENZ 性欲処理専門 セックス外来医院 14 真正中出し科 性交処置科が新設される病院に密着！編 SDDE-484",
+                "keyword":"SENZ",
+                "channel":"2",
+                "duration":7256.65,
+                "framerate":29.97,
+                "hd":true,
+                "addtime":1491800110,
+                "viewnumber":28,
                 "likes":0,
                 "dislikes":0,
-                "video_url":"https://avgle.com/video/38328/cool-video",
-                "embedded_url":"https://avgle.com/embed/07ce8a9652a76f02df10",
-                "preview_url":"https://static.avgle.com/media/videos/tmb/38328/1.jpg",
-                "vid":"38328",
-                "uid":"1"
+                "video_url":"https://avgle.com/video/39270/senz-性欲処理専門-セックス外来医院-14-真正中出し科-性交処置科が新設される病院に密着-編-sdde-484",
+                "embedded_url":"https://avgle.com/embed/e5b41c4816769be4037e",
+                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/39270/1.jpg"
             }
         ]
     }
@@ -463,43 +463,43 @@ $.getJSON(AVGLE_SEARCH_VIDEOS_API_URL + encodeURIComponent(query) + '/' + page +
     "success":true,
     "response":{  
         "has_more":true,
-        "total_videos":123,
+        "total_videos":32,
         "current_offset":0,
         "limit":2,
         "videos":[  
             {  
-                "title":"happy-video",
-                "keyword":"happy",
-                "channel":"17",
-                "duration":112.8,
-                "framerate":23.976,
+                "vid":"37807",
+                "uid":"1",
+                "title":"Thank you all for following! I finally reached the 100.000!! So here is a video of myself as a thank you!! Happy early holidays~~~~ My friend at Jporns has finally reached 100k followers, so she posted a video of herself this time",
+                "keyword":"whhdokemme",
+                "channel":"16",
+                "duration":24.54,
+                "framerate":24,
                 "hd":false,
-                "addtime":1491552611,
-                "viewnumber":0,
+                "addtime":1491374572,
+                "viewnumber":15,
                 "likes":0,
                 "dislikes":0,
-                "video_url":"https://avgle.com/video/38329/happy-video",
-                "embedded_url":"https://avgle.com/embed/754cc72675b40296c76e",
-                "preview_url":"https://static.avgle.com/media/videos/tmb/38329/1.jpg",
-                "vid":"38329",
-                "uid":"1"
+                "video_url":"https://avgle.com/video/37807/thank-you-all-for-following-i-finally-reached-the-100-000-so-here-is-a-video-of-myself-as-a-thank-you-happy-early-holidays-my-friend-at-jporns-has-finally-reached-100k-followers-so-she-posted-a-video-of-herself-this-time",
+                "embedded_url":"https://avgle.com/embed/26bd4367d963890a044d",
+                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/37807/3.jpg"
             },
             {  
-                "title":"awesome-video",
-                "keyword":"awesome happy",
-                "channel":"17",
-                "duration":209.58,
-                "framerate":23.976,
+                "vid":"35508",
+                "uid":"1",
+                "title":": ??Happy 1yr Anniversary?? ?NyRieux & Bella? ✨***downloading & posting this video on other sites is prohibited***✨ Omg I’m in love Dammmmmn that’s sexy Congrats baby.. U r the best on tumbler..keep on posting This is an old video sweetie pies?",
+                "keyword":"jason5581",
+                "channel":"13",
+                "duration":168.68,
+                "framerate":30,
                 "hd":false,
-                "addtime":1491552554,
-                "viewnumber":0,
+                "addtime":1491201161,
+                "viewnumber":79,
                 "likes":0,
-                "dislikes":0,
-                "video_url":"https://avgle.com/video/38327/awesome-video",
-                "embedded_url":"https://avgle.com/embed/07ce8a4652a76f02df10",
-                "preview_url":"https://static.avgle.com/media/videos/tmb/38327/1.jpg",
-                "vid":"38327",
-                "uid":"1"
+                "dislikes":1,
+                "video_url":"https://avgle.com/video/35508/happy-1yr-anniversary-nyrieux-bella-downloading-posting-this-video-on-other-sites-is-prohibited-omg-i-m-in-love-dammmmmn-that-s-sexy-congrats-baby-u-r-the-best-on-tumbler-keep-on-posting-this-is-an-old-video-sweetie-pies",
+                "embedded_url":"https://avgle.com/embed/d0bb976953ad54c934f0",
+                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/35508/1.jpg"
             }
         ]
     }
@@ -598,24 +598,24 @@ $.getJSON(AVGLE_SEARCH_JAV_API_URL + encodeURIComponent(query) + '/' + page + li
         "has_more":false,
         "total_videos":1,
         "current_offset":0,
-        "limit":1,
+        "limit":2,
         "videos":[  
             {  
-                "title":"SDDE-480 good-video",
-                "keyword":"good",
-                "channel":"11",
-                "duration":112.8,
-                "framerate":23.976,
-                "hd":false,
-                "addtime":1491552611,
-                "viewnumber":0,
-                "likes":0,
-                "dislikes":0,
-                "video_url":"https://avgle.com/video/38322/sdde-480-good-video",
-                "embedded_url":"https://avgle.com/embed/754cc72675b40296c76e",
-                "preview_url":"https://static.avgle.com/media/videos/tmb/38322/1.jpg",
-                "vid":"38322",
-                "uid":"1"
+                "vid":"5824",
+                "uid":"1",
+                "title":"【にしくん、初SEX収録】ロリっこ痴女とえっち遊び 椎名そら＆宮崎あや SDDE-480",
+                "keyword":"椎名そら 宮崎あや",
+                "channel":"1",
+                "duration":6074,
+                "framerate":30,
+                "hd":true,
+                "addtime":1488762607,
+                "viewnumber":38590,
+                "likes":7,
+                "dislikes":2,
+                "video_url":"https://avgle.com/video/5824/にしくん-初sex収録-ロリっこ痴女とえっち遊び-椎名そら-宮崎あや-sdde-480",
+                "embedded_url":"https://avgle.com/embed/7b35e6eb462bbf80915c",
+                "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/5824/1.jpg"
             }
         ]
     }
@@ -705,21 +705,21 @@ $.getJSON(AVGLE_GET_VIDEO_API_URL + vid, function (response) {
     "success":true,
     "response":{  
         "video":{  
-            "title":"happy-video",
-            "keyword":"happy",
+            "vid":"38329",
+            "uid":"1",
+            "title":"簡小米(蘇X靜) 性愛影片 5",
+            "keyword":"蘇怡靜",
             "channel":"17",
             "duration":112.8,
             "framerate":23.976,
             "hd":false,
             "addtime":1491552611,
-            "viewnumber":0,
-            "likes":0,
-            "dislikes":0,
-            "video_url":"https://avgle.com/video/38329/happy-video",
-            "embedded_url":"https://avgle.com/embed/754cc72675b40296c76e",
-            "preview_url":"https://static.avgle.com/media/videos/tmb/38329/1.jpg",
-            "vid":"38329",
-            "uid":"1"
+            "viewnumber":952,
+            "likes":2,
+            "dislikes":1,
+            "video_url":"https://avgle.com/video/38329/簡小米-蘇x靜-性愛影片-5",
+            "embedded_url":"https://avgle.com/embed/754cc72672b40296c76e",
+            "preview_url":"https://static.qooqlevideo.com/media/videos/tmb/38329/1.jpg"
         }
     }
 }
