@@ -43,7 +43,7 @@ if ($response['success']) {
 import urllib.request
 import json
 AVGLE_CATEGORIES_API_URL = 'https://api.avgle.com/v1/categories'
-response = json.loads(urllib.request.open(url).read().decode())
+response = json.loads(urllib.request.urlopen(url).read().decode())
 print(response)
 if response['success']:
     categories = response['response']['categories']
@@ -88,7 +88,7 @@ $.getJSON(AVGLE_CATEGORIES_API_URL, function (response) {
                 "slug":"pornstar",
                 "total_videos":350,
                 "category_url":"https://avgle.com/videos/pornstar",
-                "cover_url":"https://avgle.com/media/categories/video/1.jpg"
+                "cover_url":"https://static.avgle.com/media/categories/video/1.jpg"
             },
             {
                 "CHID":"2",
@@ -96,7 +96,7 @@ $.getJSON(AVGLE_CATEGORIES_API_URL, function (response) {
                 "slug":"jav",
                 "total_videos":2500,
                 "category_url":"https://avgle.com/videos/jav",
-                "cover_url":"https://avgle.com/media/categories/video/2.jpg"
+                "cover_url":"https://static.avgle.com/media/categories/video/2.jpg"
             },
             {
                 "CHID":"3",
@@ -104,7 +104,7 @@ $.getJSON(AVGLE_CATEGORIES_API_URL, function (response) {
                 "slug":"uncensored",
                 "total_videos":1000,
                 "category_url":"https://avgle.com/videos/uncensored",
-                "cover_url":"https://avgle.com/media/categories/video/3.jpg"
+                "cover_url":"https://static.avgle.com/media/categories/video/3.jpg"
             }
         ]
     }
@@ -147,7 +147,7 @@ import json
 AVGLE_LIST_COLLECTIONS_API_URL = 'https://api.avgle.com/v1/collections/{}?limit={}'
 page = 0
 limit = 2
-response = json.loads(urllib.request.open(url.format(page, limit)).read().decode())
+response = json.loads(urllib.request.urlopen(url.format(page, limit)).read().decode())
 print(response)
 if response['success']:
     collections = response['response']['collections']
@@ -273,7 +273,7 @@ import json
 AVGLE_LIST_VIDEOS_API_URL = 'https://api.avgle.com/v1/videos/{}?limit={}'
 page = 0
 limit = 2
-response = json.loads(urllib.request.open(url.format(page, limit)).read().decode())
+response = json.loads(urllib.request.urlopen(url.format(page, limit)).read().decode())
 print(response)
 if response['success']:
     videos = response['response']['videos']
@@ -418,7 +418,7 @@ AVGLE_SEARCH_VIDEOS_API_URL = 'https://api.avgle.com/v1/search/{}/{}?limit={}'
 query = '三上悠亜'
 page = 0
 limit = 2
-response = json.loads(urllib.request.open(url.format(urllib.parse.quote_plus(query), page, limit)).read().decode())
+response = json.loads(urllib.request.urlopen(url.format(urllib.parse.quote_plus(query), page, limit)).read().decode())
 print(response)
 if response['success']:
     videos = response['response']['videos']
@@ -551,7 +551,7 @@ AVGLE_SEARCH_JAV_API_URL = 'https://api.avgle.com/v1/jav/{}/{}?limit={}'
 query = 'sdde-480'
 page = 0
 limit = 2
-response = json.loads(urllib.request.open(url.format(urllib.parse.quote_plus(query), page, limit)).read().decode())
+response = json.loads(urllib.request.urlopen(url.format(urllib.parse.quote_plus(query), page, limit)).read().decode())
 print(response)
 if response['success']:
     videos = response['response']['videos']
@@ -664,7 +664,7 @@ import urllib.request
 import json
 AVGLE_GET_VIDEO_API_URL = 'https://api.avgle.com/v1/video/{}'
 vid = '5824'
-response = json.loads(urllib.request.open(url.format(vid)).read().decode())
+response = json.loads(urllib.request.urlopen(url.format(vid)).read().decode())
 print(response)
 if response['success']:
     video = response['response']['video']
