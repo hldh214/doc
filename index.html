@@ -1057,9 +1057,9 @@ if ($response['success']) {
 
 <h1 id="rate-limitation">Rate limitation</h1>
 
-<p>Avgle API v1 does not currently impose any explicit rate limit. However, it&rsquo;s possible for us to impose rate limit anytime depends on the system load without announcement.</p>
+<p>Avgle API v1 currently impose a rate limit of 2 req/s with brust 10 reqs. It&rsquo;s possible for us to impose more strict rate limit anytime depends on the system load without announcement.</p>
 
-<p>When rate limit exceeded, a <code class="prettyprint">429 Too Many Requests</code> response will be sent.</p>
+<p>When rate limit exceeded, a <code class="prettyprint">503 Service Unavailable</code> response will be sent.</p>
 
           <h1 id="errors">Errors</h1>
 
@@ -1080,12 +1080,12 @@ if ($response['success']) {
 <td>Not Found &ndash; The specified video could not be found</td>
 </tr>
 <tr>
-<td>429</td>
-<td>Too Many Requests &ndash; You&rsquo;re requesting too fast! Slow down!</td>
+<td>500/502</td>
+<td>Internal Server Error &ndash; We had a problem with our server. Try again later.</td>
 </tr>
 <tr>
-<td>5xx</td>
-<td>Internal Server Error &ndash; We had a problem with our server. Try again later.</td>
+<td>503</td>
+<td>Service Unavilable &ndash; You&rsquo;re requesting too fast! Slow down!</td>
 </tr>
 </tbody></table>
 
